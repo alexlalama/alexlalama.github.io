@@ -2,12 +2,10 @@ body{
     background-color: #FFC55A;
 }
 .ul-class{
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 .nav-buttons{
     text-decoration: none;
-
 }
 .nav{
     background-color: gray;
