@@ -7,10 +7,11 @@ body{
 .nav-buttons{
     text-decoration: none;
 }
-.nav{
+nav{
     background-color: gray;
 }
-.about, .school, .exposure, .projects,.other,.extras,.contact{
+.about, .school, .exposure, 
+.projects, .other, .extras, .contact{
     background-color: #FFC55A;
     color: black
 }
