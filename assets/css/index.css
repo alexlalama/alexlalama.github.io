@@ -1,0 +1,7 @@
+.ul-class{
+    display: flex;
+    flex-direction: row;
+}
+.nav-buttons{
+    text-decoration: none;
+}
