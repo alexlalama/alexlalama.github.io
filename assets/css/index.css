@@ -1,7 +1,19 @@
+body{
+    background-color: #FFC55A;
+}
 .ul-class{
     display: flex;
     flex-direction: row;
 }
 .nav-buttons{
     text-decoration: none;
+
+}
+.about, .school, .exposure, .projects,.extras,.contact{
+    background-color: #FFC55A;
+    color: black
+}
+.index:active{
+    background-color: black;
+    color: white
 }
