@@ -3,6 +3,7 @@ body{
 }
 .ul-class{
     display: block;
+    text-decoration: none;
 }
 .nav-buttons{
     text-decoration: none;
