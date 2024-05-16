@@ -1,25 +1,136 @@
-body{
-    background-color: #FFC55A;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-.ul-class{
-    display: block;
-    text-decoration: none;
+:root {
+  --background-nav: navy;
+  --background-color: purple;
+  --nav-color: #030301;
+  --text-color: #030301;
+  --main-background-color: #b7ad99;
+  --link-background: #fffff3;
 }
-.nav-buttons{
-    text-decoration: none;
+
+/*
+ * Navigation Section CSS Styling
+ */
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-nav{
-    background-color: gray;
+.nav {
+  list-style: none;
 }
-.about, .school, .exposure, 
-.projects, .other, .extras, .contact{
-    background-color: #FFC55A;
-    color: black;
+.nav > a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 10px;
+  color: var(--nav-color);
 }
-.index:active{
-    background-color: black;
-    color: white;
+nav {
+  background-color: var(--background-nav);
 }
-.container{
-    background-color: #00215E;
+.home:link,
+.about:link,
+.projects:link,
+.education:link,
+.hobbies:link,
+.contact:link {
+  color: var(--text-color);
+  background-color: var(--link-background);
+}
+.home:visited,
+.about:visited,
+.projects:visited,
+.education:visited,
+.hobbies:visited,
+.contact:visited {
+  color: var(--link-background);
+  background-color: var(--main-background-color);
+}
+.home:hover,
+.about:hover,
+.projects:hover,
+.education:hover,
+.hobbies:hover,
+.contact:hover {
+  color: var(--link-background);
+  background-color: var(--background-color);
+  transition: ease-in;
+  transition-duration: 400ms;
+}
+.home:active .about:active,
+.projects:active,
+.education:active,
+.hobbies:active,
+.contact:active {
+  background-color: var(--text-color);
+  color: var(--link-background);
+}
+img {
+  width: 250px;
+  height: 350px;
+}
+
+/*
+ * Main Section CSS Styling
+ */
+
+main {
+  background-color: var(--main-background-color);
+  text-align: center;
+  color: var(--text-color);
+}
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+p.title {
+  font-size: x-large;
+}
+
+/*
+ * Footer CSS Styling
+ */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links,
+.footer-links > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+}
+.footer-links > a:link {
+  color: var(--text-color);
+  background-color: var(--link-background);
+}
+
+.footer-links > a:visited {
+  color: var(--link-background);
+  background-color: var(--main-background-color);
+}
+.footer-links > a:hover {
+  color: var(--link-background);
+  background-color: var(--background-color);
+  transition: ease-in;
+  transition-duration: 400ms;
+}
+.footer-links > a:active {
+  background-color: var(--text-color);
+  color: red;
 }
