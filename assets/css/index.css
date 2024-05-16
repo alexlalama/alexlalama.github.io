@@ -69,7 +69,7 @@ nav {
   background-color: var(--text-color);
   color: var(--link-background);
 }
-img {
+#personal {
   width: 250px;
   height: 350px;
 }
@@ -90,6 +90,17 @@ body {
 }
 p.title {
   font-size: x-large;
+}
+.gallery{
+  width:5%;
+  height: 5%;
+}
+#bigPic
+{
+  width: 20%;
+  height: 20%;
+  max-width: 250px;
+  max-width: 200px;
 }
 
 /*
