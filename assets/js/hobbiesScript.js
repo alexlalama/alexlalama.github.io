@@ -3,10 +3,10 @@ var captionArray = ['Darlene Sitting In The Grass','Darlene Doing Her Hair In Th
 function init()
 {
     var numImg = document.getElementById('imgHolder').getElementsByTagName('img').length;
-    for(var i=1; i <=numImg; i++)
+    for(var l=1; l <=numImg; l++)
         {
-            newImage[i] = new Image();
-            newImage[i].src = "./assets/imgs/photo0"+i+".png";
+            newImage[l] = new Image();
+            newImage[l].src = "./assets/imgs/photo0"+l+".png";
         }
     document.getElementById('cap').innerHTML = captionArray[0];
 }

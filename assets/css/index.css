@@ -15,21 +15,23 @@
 /*
  * Navigation Section CSS Styling
  */
-ul {
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
-.nav {
+li {
   list-style: none;
 }
-.nav > a {
+li > a {
   text-decoration: none;
   padding: 6px;
   border-radius: 10px;
   color: var(--nav-color);
 }
-nav {
+ul {
   background-color: var(--background-nav);
 }
 .home:link,
@@ -72,37 +74,89 @@ nav {
 #personal {
   width: 250px;
   height: 350px;
+  align-content: center;
+  justify-content: center;
 }
 
 /*
  * Main Section CSS Styling
  */
 
-main {
+main 
+{
   background-color: var(--main-background-color);
   text-align: center;
   color: var(--text-color);
 }
-body {
+body 
+{
   background-color: var(--background-color);
+  display: grid;
+  grid-template-areas: 'nav nav nav ' 'main main main' ' footer footer footer';
+}
+nav
+{
+  grid-area: nav;
+}
+main
+{
+  grid-area: main;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-p.title {
+footer
+{
+  grid-area: footer;
+}
+.title 
+{
   font-size: x-large;
 }
-.gallery{
-  width:5%;
-  height: 5%;
-}
-#bigPic
+.flip-card
 {
-  width: 20%;
-  height: 20%;
-  max-width: 250px;
-  max-width: 200px;
+  background-color: transparent;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  
+}
+.flip-card-inner
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner
+{
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
 
+.flip-card-front
+{
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back
+{
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 /*
  * Footer CSS Styling
  */
@@ -144,4 +198,53 @@ footer {
 .footer-links > a:active {
   background-color: var(--text-color);
   color: red;
+}
+nav a .icon 
+{
+  display: none;
+}
+/*
+ * Media Query
+ */
+
+ @media only screen and (max-width: 600px) 
+ {
+  body
+  {
+    display: grid;
+    grid-template-areas: 'nav''main''footer';
+  }
+  nav
+  {
+    grid-area: nav;
+  }
+  main
+  {
+    grid-area: main;
+
+  }
+  footer
+  {
+    grid-area: footer;
+  }
+  nav > ul > li 
+  {
+   
+    display: none;
+  }
+
+  nav a .icon
+  {
+    background: red;
+    display: block;
+    position: relative;
+    right:0;
+    left: 0;
+    top:0;
+ 
+  }
+  nav a:hover 
+  {
+    background-color: gray;
+  }
 }
