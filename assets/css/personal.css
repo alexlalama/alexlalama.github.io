@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  
 }
 :root{
     --background-color: #169873;
@@ -32,7 +33,6 @@ header
 img
 {
     width: 100px;
-   
 }
 .logo
 {
@@ -86,15 +86,109 @@ nav ul li a.active
     margin:  6px 0 ;
     background: black;
 }
- /*
-  * Body Styles
-  */
+ /* Body Styles */
 
 body 
 {
     background: var(--background-color);
 }
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+section
+{
+    background: var(--foreground);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#icons
+{
+    background: var(--foreground);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#personal
+{
+    width: 250px;
+    height: 350px;
+}
+.flip-card 
+{
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px; 
+}
+    
+.flip-card-inner 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,.02);
+}  
+.flip-card:hover .flip-card-inner 
+{
+    transform: rotateY(180deg);
+}  
+.flip-card-front, .flip-card-back 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.flip-card-front 
+{
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back 
+{
+    background-color: var(--nav-background);
+    color: var(--nav-color);
+    transform: rotateY(180deg);
+}
+.fa 
+{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover 
+{
+    opacity: 0.7;
+}
+.fa-linkedin 
+{
+    background: #007bb5;
+    color: white;
+}
 
+.fa-youtube 
+{
+    background: #bb0000;
+    color: white;
+}
+  
 /*
  * Media Query for Phones
  */
