@@ -24,7 +24,7 @@
   background-color: white;
   overflow: hidden;
 }
-.ulToDo .liToDo
+#myUL .liToDo
 {
   cursor: pointer;
   position: relative;
@@ -37,21 +37,21 @@
   -ms-user-select: none;
   user-select: none;
 }
-.ulToDo .liToDo:nth-child(odd)
+#myUL .liToDo:nth-child(odd)
 {
   background: #f9f9f9;
 }
-.ulToDo .liToDo:hover
+#myUL .liToDo:hover
 {
   background: #ddd;
 }
-.ulToDo .liToDo:checked
+#myUL .liToDo:checked
 {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
-.ulToDo .liToDo.checked::before
+#myUL .liToDo.checked::before
 {
   content: '';
   position: absolute;
