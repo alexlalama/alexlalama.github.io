@@ -22,16 +22,16 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-li {
+li.navLi {
   list-style: none;
 }
-li > a {
+li.navLi > a {
   text-decoration: none;
   padding: 6px;
   border-radius: 10px;
   color: var(--nav-color);
 }
-ul {
+ul.navUL {
   background-color: var(--background-nav);
 }
 .home:link,
@@ -227,7 +227,7 @@ nav a .icon
   {
     grid-area: footer;
   }
-  nav > ul > li 
+  nav > ul.navUL > li.navLi
   {
    
     display: none;

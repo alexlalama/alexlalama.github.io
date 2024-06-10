@@ -16,7 +16,7 @@ for (k = 0; k < acc.length; k++) {
   });
 }
 
-var nodeList = document.getElementsByTagName("LI");
+var nodeList = document.getElementsByClassName("liToDo");
 var j;
 for (j = 0; j < nodeList.length; j++)
     {
@@ -38,9 +38,10 @@ for (a = 0; a < close.length; a++)
         }
     }
 
-var list = document.querySelector('ul');
+var list = document.querySelector('ul#myUL');
+
 list.addEventListener('click', function(ev){
-    if(ev.target.tagName === 'LI'){
+    if(ev.target.className === 'liToDo'){
         ev.target.classList.toggle('checked');
     }
 },false);
