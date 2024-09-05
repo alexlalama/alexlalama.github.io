@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --background-nav: navy;
+  --background-color: purple;
+  --nav-color: #030301;
+  --text-color: #030301;
+  --main-background-color: #b7ad99;
+  --link-background: #fffff3;
+}
+/*nav
+/*
+ * Navigation Section CSS Styling
+ */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li.navLi {
+  list-style: none;
+}
+li.navLi > a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 10px;
+  color: var(--nav-color);
+}
+ul.navUL {
+  background-color: var(--background-nav);
+}
+.home:link,
+.about:link,
+.projects:link,
+.education:link,
+.hobbies:link,
+.contact:link {
+  color: var(--text-color);
+  background-color: var(--link-background);
+}
+.home:visited,
+.about:visited,
+.projects:visited,
+.education:visited,
+.hobbies:visited,
+.contact:visited {
+  color: var(--link-background);
+  background-color: var(--main-background-color);
+}
+.home:hover,
+.about:hover,
+.projects:hover,
+.education:hover,
+.hobbies:hover,
+.contact:hover {
+  color: var(--link-background);
+  background-color: var(--background-color);
+  transition: ease-in;
+  transition-duration: 400ms;
+}
+.home:active .about:active,
+.projects:active,
+.education:active,
+.hobbies:active,
+.contact:active {
+  background-color: var(--text-color);
+  color: var(--link-background);
+}
+#personal {
+  width: 250px;
+  height: 350px;
+  align-content: center;
+  justify-content: center;
+}
+
+/*
+ * Main Section CSS Styling
+ */
+
+main 
+{
+  background-color: var(--main-background-color);
+  text-align: center;
+  color: var(--text-color);
+}
+body 
+{
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-areas: 'nav nav nav ' 'main main main' ' footer footer footer';
+}
+nav
+{
+  grid-area: nav;
+}
+main
+{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+footer
+{
+  grid-area: footer;
+}
+.title 
+{
+  font-size: x-large;
+}
+.flip-card
+{
+  background-color: transparent;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  
+}
+.flip-card-inner
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner
+{
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front
+{
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back
+{
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*
+ * Footer CSS Styling
+ */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links,
+.footer-links > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+}
+.footer-links > a:link {
+  color: var(--text-color);
+  background-color: var(--link-background);
+}
+
+.footer-links > a:visited {
+  color: var(--link-background);
+  background-color: var(--main-background-color);
+}
+.footer-links > a:hover {
+  color: var(--link-background);
+  background-color: var(--background-color);
+  transition: ease-in;
+  transition-duration: 400ms;
+}
+.footer-links > a:active {
+  background-color: var(--text-color);
+  color: red;
+}
+nav a .icon 
+{
+  display: none;
+}
+/*
+ * Media Query
+ */
+
+ @media only screen and (max-width: 600px) 
+ {
+  body
+  {
+    display: grid;
+    grid-template-areas: 'nav''main''footer';
+  }
+  nav
+  {
+    grid-area: nav;
+  }
+  main
+  {
+    grid-area: main;
+
+  }
+  footer
+  {
+    grid-area: footer;
+  }
+  nav > ul.navUL > li.navLi
+  {
+   
+    display: none;
+  }
+
+  nav a .icon
+  {
+    background: red;
+    display: block;
+    position: relative;
+    right:0;
+    left: 0;
+    top:0;
+ 
+  }
+  nav a:hover 
+  {
+    background-color: gray;
+  }
+}

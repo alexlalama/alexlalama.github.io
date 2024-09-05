@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alex's Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/hobbies.css">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/logo.png">
+    <script defer src="./assets/js/indexScript.js"></script>
+    <script defer src="./assets/js/hobbiesScript.js"></script>
+    <script defer src="./assets/js/projectsScript.js"></script>
+  </head>
+  <body onload="init();">
+    <header>  
+      <div class="logo">
+        <img src="./assets/imgs/logo.png" width="100px"alt="Logo">
+      </div>
+      <input type="checkbox" id="nav_check" hidden>
+    <nav>
+      <!-- <div class="logo"><img src=./assets/imgs/logo.png" alt="Logo"></div> -->
+      <ul >
+        <li ><a href="#homeSection" class="home">Home</a></li>
+        <li><a href="#aboutSection" class="about">About</a></li>
+        <li >
+          <a href="#projectsSection" class="projects">Projects</a>
+        </li>
+        <li >
+          <a href="#educationSection" class="education">Education</a>
+        </li>
+        <li ><a href="#hobbiesSection" class="hobbies">Hobbies</a></li>
+        <li><a href="#contactSection" class="contact">Contact</a></li>
+        <li><a href="personal.html">Page</a></li>
+      </ul>
+     
+      </a>
+    </nav>
+  </header>
+    <main>
+      <section id="homeSection">  
+        <h1>Home Page</h1>
+        <div class ="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/imgs/personal_photo.jpg" id = "personal" alt="personal_photo">
+            </div>
+            <div class ="flip-card-back">
+              <h1>Alex Lalama</h1>
+              <p>Full Time Student</p>
+              <p>Has a love of music & coding</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          My Name is Alex Lalama. Welcome to my personal page. Here I have
+          showcased my projects, experience and other hobbies that I am working on
+          or have completed. I wish you find some interests that are similar and
+          look to connect!
+        </p>
+      </section>
+      <section id="aboutSection">
+        <h1>About Page</h1>
+      <p>
+        As you probably know, my name is Alex Lalama. I currently live in New
+        Jersey and have a ton of hobbies including producing music, reading,
+        drawing, coding, and enjoying nature. I currently attend Rutgers
+        University. If you would like to read more about my courses, professors,
+        and previous education such as where I transferred from before Rutgers,
+        please visit my <a href="#educationSection">Education</a> section.
+        <br><br>
+        I have an interest in digitally producing music and learning new things.
+        After college, I aim to work in the tech or music industry where I can
+        expand my design skills within coding, using DAWS, and instruments. To
+        find more about my specific hobbies and what I have created you can
+        visit my <a href="#hobbiesSection">Hobbies</a> section.
+      </p>
+      </section>
+      <section id="projectsSection">
+        <h1>Projects Page</h1>
+        <button class="accordion">To-Do List</button>
+        <div class="panel">
+          <div id="myDIV" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="input" placeholder="Enter Title">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div> 
+        <ul id="myUL">
+          <li class ="liToDo">Read a book</li>
+          <li class ="liToDo">Journal</li>
+          <li class="liToDo checked">Code JavaScript</li>
+          <li class ="liToDo">Buy Sonia a Birthday Card</li>
+        </ul>
+        </div>
+      </section>
+
+      <section id="educationSection">
+        <h1>Education Page</h1>
+        <ul id="educationUl">
+          <li>Rochester Institute of Technology</li>
+          <li>Rutgers University</li>
+          <li>Old Bridge High School</li>
+  
+        </ul>
+      </section>
+      <section id="hobbiesSection">
+        <h1>Hobbies Page</h1>
+      
+      <p>Below are things I have created and more specific information about my hobbies.</p>
+
+      <h3>Photography</h3>
+      <figure id ="bigPlace">
+        <img src = "./assets/imgs/photo01.png" alt = "Big Photo Holder" id = "bigPic">
+        <figcaption id="cap"></figcaption>
+    </figure>
+    <section class = "table">
+        <div id = "imgHolder">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo01.png" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo02.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo03.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo04.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo05.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo06.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo07.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+            <img onclick="changeMe(this)" alt ="photo" src="./assets/imgs/photo08.png" class="gallery" border = "0" onmouseover="this.style.cursor='pointer';">
+        </div>
+    </section>
+      <h3>Videography</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cOxuIegU408?si=8mrOtLJwGfHk0usT" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <section id ="contactSection">
+        <h1>Contact Page</h1>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/alexandra-lalama-67497a205" target="_blank">Alex Lalama</a>
+      <br>
+      Email:
+      <a href="mailto:anl116@rutgers.edu">Alex Lalama</a><br>
+      <a href="https://www.youtube.com/@alexlalama" target="_blank">YouTube</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <a href="#homeSection">Home </a>
+        <a href="#contactSection">Contact</a>
+      </div>
+      &copy; Alex Lalama 2024
+    </footer>
+  </body>
+</html>
