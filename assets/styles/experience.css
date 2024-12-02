@@ -1,0 +1,8 @@
+.job{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.date{
+    font-style: italic;
+}
