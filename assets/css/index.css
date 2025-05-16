@@ -4,6 +4,19 @@
     --rose-quartz: #bc9cb0;
     --french-gray: #d3cdd7;
     --mint-green: #ddf2eb;
+    --green: #6aaa64;
+    --darkendGreen: #538d4e;
+    --yellow: #c9b458;
+    --darkendYellow: #b59f3b;
+    --lightGray: #d8d8d8;
+    --gray: #999999;
+    --darkGray: #333333;
+    --white: #fff;
+    --black: #212121;
+    --ritOrange: black;
+    --orange: orange;
+    --game-max-width: 500px;
+
 }
 *{
     box-sizing: border-box;
@@ -11,22 +24,19 @@
 }
 body{
     background-color: var(--gray);
-}
-.container{
-    color: var(--mint-green);
-    padding: 15px;
-}
-.header{
     text-align: center;
-    border-radius: 2%;
-    color:var(--rose-quartz);
 }
+
 #name{
     font-size: 30px;
     font-weight: bold;
     background-color: var(--mint-green);
 }
-ul.nav{
+#about
+{
+    text-align: left;
+}
+nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -40,18 +50,203 @@ a{
     text-decoration: none;
     font-size: 20px;
 }
-.guyzers{
-    display: flex;
-    flex-direction: row;
-}
-.dropdown>ul{
-    display: none;
-}
-.dropdown:hover>ul, .dropdown:hover>li{
-    display: contents;
-    list-style-type: none;
-}
-
-footer{
+h3{
     text-align: center;
 }
+#contacts{
+    justify-content: space-between;
+    display: flex;
+}
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
+input{
+    text-align:center;
+}
+#education, .job, .company{
+    text-align:left;
+}
+.duration{
+    text-align:right;
+    font-weight: normal;
+}
+.title{
+    font-weight: bold;
+}
+.job {
+    display:flex;
+    flex-direction: right;
+    justify-content: space-between;
+}
+
+.degree{
+    font-style: italic;
+}
+.footer >a{
+    font-size: 19px;
+    
+}
+footer{
+    text-align: left ;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+  }
+  nav{
+    grid-area: nav;
+  }
+  main{
+    grid-area: main;
+  }
+  footer{
+    grid-area:footer;
+  }
+}
+
+
+/*Project Styles*/
+.note-container{
+    box-shadow: 4px 4px 8px #333333;
+    position: relative;
+    animation: popIn .5s forward;
+    transition: all .3s ease-in;
+    opacity: 0;
+    transform: scale(0);
+}
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+
+    }
+    50%{
+        opacity: .7s;
+        transform: scale(1.1);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+.note-header{
+    position:relative;
+    background: lightsteelblue;
+    padding: 5px 10px;
+}
+/* Global Styles & Custom Properties */
+.projects > .game-container
+{
+    background-color: black;
+}
+.game-container {
+    width: 100%;
+    max-width: var(--game-max-width);
+    margin: 0 auto;
+    padding: 0 10px;
+}  
+/* Header */
+header {
+    border-bottom: 1px solid var(--darkGray);
+}
+header h1 {
+    text-align: center;
+    color: var(--lightGray);
+    margin: 10px 0 10px;
+}  
+header h1 span {
+    color: var(--ritOrange);
+}  
+/* Gameboard */
+.gameboard {
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(65px, auto);
+    grid-gap: 5px;
+}  
+.gameboard .card {
+    border: 2px solid BLACK;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: var(--white);
+    text-transform: uppercase;
+    user-select: none;
+}  
+/* Keyboard */
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+    touch-action: interaction;
+}  
+.keyboard .row {
+    display: flex;
+    gap: 7px;
+    width: 100%;
+}  
+.keyboard .row.middle {
+    width: 92%;
+    max-width: 100%;
+}  
+.keyboard button {
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 52px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    background-color: black;
+    color: var(--lightGray);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+    touch-action: interaction;
+}  
+.keyboard button[data-enter],
+.keyboard button[data-delete] {
+    flex: 1.5;
+    font-size: 12px;
+}  
+/* Shared */
+.gameboard .card[data-state='wrong'],
+.keyboard button[data-state='wrong'] {
+    border: none;
+    background-color: var(--darkGray);
+}  
+.gameboard .card[data-state='found'],
+.keyboard button[data-state='found'] {
+    border: none;
+    background-color: var(--yellow);
+}  
+.gameboard .card[data-state='correct'],
+.keyboard button[data-state='correct'] {
+    border: none;
+    background-color: var(--green);
+}
+  
