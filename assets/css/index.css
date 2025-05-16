@@ -153,18 +153,7 @@ footer{
     margin: 0 auto;
     padding: 0 10px;
 }  
-/* Header */
-header {
-    border-bottom: 1px solid var(--darkGray);
-}
-header h1 {
-    text-align: center;
-    color: var(--lightGray);
-    margin: 10px 0 10px;
-}  
-header h1 span {
-    color: var(--ritOrange);
-}  
+  
 /* Gameboard */
 .gameboard {
     width: 350px;
