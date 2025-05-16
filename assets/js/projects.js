@@ -73,7 +73,7 @@ async function initializeGame() {
 
 function loadGameState() {
   try {
-    let savedGameState = localStorage.getItem('adams-ruwordle');
+    let savedGameState = localStorage.getItem('alexs-wordle');
     console.log(savedGameState);
     if (savedGameState) {
       gameState = JSON.parse(savedGameState);
@@ -87,7 +87,7 @@ function loadGameState() {
   }
 }
 function saveGameState(state) {
-  localStorage.setItem('adams-ruwordle', JSON.stringify(state));
+  localStorage.setItem('alexs-wordle', JSON.stringify(state));
 }
 
 initializeGame();
