@@ -14,9 +14,9 @@ let gameState = {
 // 1. Fetch all necessary JSON data for our game
 async function getData() {
   try {
-    let dictionaryResponse = await fetch('data/dictionary.json'); //dictionary
+    let dictionaryResponse = await fetch('assets/data/dictionary.json'); //dictionary
     let dictionaryObject = await dictionaryResponse.json();
-    let gameWordsResponse = await fetch('data/game_words.json');
+    let gameWordsResponse = await fetch('assets/data/game_words.json');
     let gameWordsObject = await gameWordsResponse.json();
 
     dictionary = [...dictionaryObject];
