@@ -1,0 +1,6 @@
+#one, #two, #three, #four{
+    min-width: 20px;
+    max-width: 300px;
+    max-height: 200px;
+    border-style: 1px red solid;
+}

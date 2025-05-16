@@ -1,0 +1,200 @@
+:root{
+    --nav-background: #2E2836;
+    font-size: 20px;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--nav-background);
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+nav > div{
+    margin: auto;
+}
+nav> div> a{
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+}
+nav > div > a:link{
+    background-color: white;
+    color: black;
+}
+nav > div > a:visited{
+    background-color: #E1AA7D;
+}
+nav > div > a:hover{
+    background-color: #BE8A60;
+    animation: fade-in;
+    opacity:1;
+}
+nav > div > a:active{
+    background-color: #B6D094;
+}
+body{
+    background: gray;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'name'
+    'intro-bio'
+    'photos'
+    'footer';
+}
+#name{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+#intro-bio{
+    display: flex;   
+    flex-direction: row;
+    padding: 2px;
+}
+#words{
+    padding-left: 24px;
+}
+#membership_photo{
+    width: 220px;
+    height: 180px;
+}
+#profile-photo{
+    width: 600px;
+    height: 400px;
+}
+#photos{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#footer, #footer > a{
+    text-align: center;
+    margin: 10px;
+    background-color: var(--nav-background);
+    text-decoration: none;
+    height: 50px;
+}
+
+#photo1, #photo2{
+    width: 300px;
+    height: 200px;
+}
+#links{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#linkedin{
+    width: 130px;
+    height: 100px;
+}
+#github, #email, #whatsapp, #wechat{
+    width: 100px;
+    height: 100px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#rit-info{
+    grid-area: rit-info;
+}
+#rit-date{
+    grid-area: date-one;
+    font-style: italic;
+    text-align: right;
+}
+#ru-info{
+    grid-area: ru-info;
+}
+#ru-date{
+    grid-area: date-two;
+    font-style: italic;
+    text-align: right; 
+}
+#ob-info{
+    grid-area: ob-info;
+}
+#ob-date{
+    grid-area: date-three;
+    font-style: italic;
+    text-align: right;
+}
+.title{
+    font-weight: bold;
+}
+
+.logo > img {
+    max-width: 150px;
+    max-height: 150px;
+}
+.job-row{
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    text-align: right;
+}
+#one, #two, #three, #four{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: grid;
+        grid-template-areas:
+        'nav'
+        'main'
+        'footer';
+    }
+    nav{
+        grid-area: nav;
+        max-width: auto;
+        margin: 5px;
+    }
+    nav > div{
+        display:none;
+    }
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        'name'
+        'intro-bio'
+        'photos';
+    }
+    #name{
+        grid-area: name;
+    }
+    #intro-bio{
+        display: grid;
+        grid-template-areas:
+        'photo'
+        'bio' 
+    }   
+    #profile-photo{
+        grid-area: photo;
+    }
+    #words{
+        grid-area: bio;
+        
+    }
+    footer{
+        grid-area: footer;
+    }
+}

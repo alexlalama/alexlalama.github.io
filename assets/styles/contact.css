@@ -1,0 +1,15 @@
+#links{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#linkedin{
+    width: 130px;
+    height: 100px;
+}
+#github, #email, #whatsapp, #wechat{
+    width: 100px;
+    height: 100px;
+}
