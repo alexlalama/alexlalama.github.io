@@ -1,27 +1,15 @@
 :root{
-    --gray: #88958D;
-    --ebony: #606d5d;
-    --rose-quartz: #bc9cb0;
-    --french-gray: #d3cdd7;
-    --mint-green: #ddf2eb;
-    --green: #6aaa64;
-    --darkendGreen: #538d4e;
-    --yellow: #c9b458;
-    --darkendYellow: #b59f3b;
-    --lightGray: #d8d8d8;
-    --gray: #999999;
-    --darkGray: #333333;
-    --white: #fff;
-    --black: #212121;
-    --ritOrange: black;
-    --orange: orange;
-    --game-max-width: 500px;
-
+   /*  */
+}
+@font-face{
+    font-family: JuliusSansOne;
+    src: url('https://fonts.googleapis.com/css?family=Julius Sans One');
 }
 *{
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: JuliusSansOne;
 }
+/* 
 body{
     background-color: var(--gray);
     text-align: center;
@@ -111,7 +99,7 @@ footer{
 }
 
 
-/*Project Styles*/
+Project Styles
 .note-container{
     box-shadow: 4px 4px 8px #333333;
     position: relative;
@@ -142,7 +130,7 @@ footer{
     background: lightsteelblue;
     padding: 5px 10px;
 }
-/* Global Styles & Custom Properties */
+Global Styles & Custom Properties
 .projects > .game-container
 {
     background-color: black;
@@ -153,7 +141,7 @@ footer{
     margin: 0 auto;
     padding: 0 10px;
 }  
-/* Header */
+Header
 header {
     border-bottom: 1px solid var(--darkGray);
 }
@@ -162,7 +150,7 @@ header h1 {
     color: var(--lightGray);
     margin: 10px 0 10px;
 }  
-/* Gameboard */
+Gameboard
 .gameboard {
     width: 350px;
     max-width: 100%;
@@ -188,14 +176,14 @@ header h1 {
     text-transform: uppercase;
     user-select: none;
 }  
-/* Keyboard */
+Keyboard
 .keyboard {
     display: flex;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+    touch-action added here to prevent double tapping to zoom for mobile devices
     touch-action: interaction;
 }  
 .keyboard .row {
@@ -222,7 +210,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+    touch-action added here to prevent double tapping to zoom for mobile devices
     touch-action: interaction;
 }  
 .keyboard button[data-enter],
@@ -230,7 +218,7 @@ header h1 {
     flex: 1.5;
     font-size: 12px;
 }  
-/* Shared */
+/* Shared 
 .gameboard .card[data-state='wrong'],
 .keyboard button[data-state='wrong'] {
     border: none;
@@ -246,7 +234,7 @@ header h1 {
     border: none;
     background-color: var(--green);
 }
-/*Contact*/
+/*Contact
 #contacts{
     justify-content: space-around;
     display: flex;
@@ -285,3 +273,4 @@ header h1 {
     padding: 50px;
   }
 }
+ */
