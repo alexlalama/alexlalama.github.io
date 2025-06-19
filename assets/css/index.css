@@ -26,10 +26,12 @@ nav{
 nav > div > a:active {
     color: white;
 }
-nav > div > a: {
-    color: white;
+nav > div > a:visited {
+    color: red;
 }
-
+nav > div > a:hover {
+    color: purple;
+}
 
 /* 
 #name{
