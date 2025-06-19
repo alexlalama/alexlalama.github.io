@@ -9,6 +9,15 @@ body{
     background-color: var(--gray);
     text-align: center;
 }
+
+nav{
+    background-color: #8A2D3B;
+    border-bottom: white solid 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betwen;
+}
+
 /* 
 #name{
     font-size: 30px;
