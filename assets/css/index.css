@@ -15,10 +15,12 @@ nav{
     border-bottom: white solid 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 80%;
 }
-
+nav > div{
+    color: white;
+}
 /* 
 #name{
     font-size: 30px;
