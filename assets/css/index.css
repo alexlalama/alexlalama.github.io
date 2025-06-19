@@ -23,15 +23,23 @@ nav{
     padding: 10px;
     color: white;
 }
+a:link {
+  color: red;
+}
 
-a:active {
-    color: white;
-}
+/* visited link */
 a:visited {
-    color: red;
+  color: green;
 }
- a:hover {
-    color: purple;
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 /* 
