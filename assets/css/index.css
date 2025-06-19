@@ -3,6 +3,7 @@
 *{
     box-sizing: border-box;
     font-family:'Julius Sans One', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -22,17 +23,14 @@ nav{
     padding: 10px;
     color: white;
 }
-nav > a{
-    text-decoration: none;
 
-}
-nav > div > a:active {
+a:active {
     color: white;
 }
-nav > div > a:visited {
+a:visited {
     color: red;
 }
-nav > div > a:hover {
+ a:hover {
     color: purple;
 }
 
