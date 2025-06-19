@@ -18,6 +18,8 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 80%;
+    padding: 10px;
+    color: white;
     
 }
 nav > div> a{
