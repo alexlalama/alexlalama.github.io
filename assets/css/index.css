@@ -1,11 +1,12 @@
 
 @font-face{
-    font-family: JuliusSansOne;
-    src: url('https://fonts.googleapis.com/css?family=Julius Sans One');
+    font-family: 'Julius Sans One';
+    src:  local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/juliussansone/v1/iU65JP9acQHPDLkdalCF7u921tOcMok2fHawGmtxikA.ttf) format('truetype');
 }
 *{
     box-sizing: border-box;
-    font-family: JuliusSansOne;
+    font-family: 'Julius Sans One';
+    src:  local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/juliussansone/v1/iU65JP9acQHPDLkdalCF7u921tOcMok2fHawGmtxikA.ttf) format('truetype');    
 }
 /* 
 body{
