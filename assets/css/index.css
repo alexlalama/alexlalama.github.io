@@ -15,7 +15,8 @@ nav{
     border-bottom: white solid 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-betwen;
+    justify-content: space-between;
+    max-width: 80%;
 }
 
 /* 
