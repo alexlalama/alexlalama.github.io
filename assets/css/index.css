@@ -8,6 +8,7 @@
 body{
     background-color: #BE5B50;
     text-align: center;
+    color: white;
 }
 
 nav{
@@ -20,7 +21,15 @@ nav{
     max-width: 80%;
     padding: 10px;
     color: white;
+    text-decoration: none;
 }
+nav > div > a:active {
+    color: white;
+}
+nav > div > a: {
+    color: white;
+}
+
 
 /* 
 #name{
