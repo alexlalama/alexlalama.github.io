@@ -21,7 +21,10 @@ nav{
     max-width: 80%;
     padding: 10px;
     color: white;
+}
+nav > a{
     text-decoration: none;
+
 }
 nav > div > a:active {
     color: white;
