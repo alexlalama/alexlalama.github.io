@@ -20,7 +20,7 @@ nav{
     max-width: 80%;
     
 }
-nav > div{
+nav > div> a{
     color: white;
     padding: 10px;
 }
