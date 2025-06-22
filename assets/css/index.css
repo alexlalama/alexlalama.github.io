@@ -21,7 +21,7 @@ body{
 
 nav{
     margin: auto;
-    background-color: whitesmoke;
+    background-color: gray;
     border-bottom: white solid 5px;
     display: flex;
     flex-direction: row;
