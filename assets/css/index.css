@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 :root{
-    --background-color: #043940;
-    --text-color: #e9ce3e;
-    --text-color-two: #9a8d3e;
-    --text-color-three: #b2294e;
-
+    --background-color: #97B098;
+    --text-color: #B8B08D;
+    --text-color-two: #F29559;
+    --text-color-three: #BAD7F2;
+    --box-color: #F2D492;
 }
 *{
     box-sizing: border-box;
@@ -16,19 +16,25 @@
 body{
     background-color: var(--background-color);
     text-align: center;
-    color: var(--text-color);
+    color: black;
 }
 
 nav{
     margin: auto;
-    background-color: gray;
-    border-bottom: white solid 5px;
+    background-color: #202C39;
+    border-bottom: #F2D492 solid 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 80%;
     padding: 10px;
     color: var(--text-color);
+}
+
+main{
+    background-color: var(--box-color);
+    max-width: 80%;
+    margin: auto;
 }
 a:link {
   color: var(--text-color);
@@ -48,7 +54,15 @@ a:hover {
 a:active {
   color: black;
 }
-
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #202C39;
+    border-top: #F2D492 solid 5px;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+}
 /* 
 #name{
     font-size: 30px;
