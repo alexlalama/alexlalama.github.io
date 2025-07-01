@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="assets/js/about.js"></script>
 </head>
 <body>
-    <div>Alexandra Lalama</div>
+    <div class="name">Alexandra Lalama</div>
     <nav>
         <div><a href="index.html">Home</a></div>
         <div><a href="about.html">About</a></div>
@@ -16,21 +17,22 @@
     </nav>
     <main>
     <div id ="about">
-        As you probably know, my name is Alex Lalama. I currently live in New
-        Jersey. I currently attend Middlesex County College and study CS in a concentration of Network and Administration Support. If you would like to read more about my courses and previous education please visit my <a href="educationSection">Education</a> section.
+        As you probably know, my name is Alexandra  Lalama. I currently live in New
+        Jersey. I currently attend Middlesex County College and study CS in a concentration of Network and Administration Support. If you would like to read more about my courses and previous education please visit my <a class="link" href="#educationSection">Education</a> section.
         <br><br>
         I have an interest in digitally producing music and learning new things.
         After college, I aim to work in the tech or music industry where I can
         expand my design skills within coding, using DAWS, and instruments. To
         find more about my specific hobbies and what I have created you can
-        visit my <a href="hobbiesSection">Hobbies</a> section.
+        visit my <a   class="link"href="#hobbiesSection">Hobbies</a> section. I also have an interest in 
+        computer hardware. 
     </div>
     <p id = "educationSection">
         <h2>Education</h2>
         <div class="school">
                 <div class="title">Middlesex County College</div>
-                <div class="degree">A.A.S in Computer Science</div>
-                <div class="concentration">Network and Administration Support</div>
+                <div class="degree">A.A.S in Computer Science, major in Network and Administration Support </div>
+
             </div>        
         </br>
             <div class="school">
@@ -43,10 +45,16 @@
         <h2>Hobbies</h2>
         <h3>Photos</h3>
         
-        <img src="./assets/media/img/photo03.png" alt="flowers" style="max-width: 100px; max-height: 100px">
-        <img src="./assets/media/img/photo04.png" alt="squirrel"style="max-width: 100px; max-height: 100px">
-        <img src="./assets/media/img/photo13.jpg" alt="motocyle">
-      </p>
+            <div id="images">
+                <img id="image" src="./assets/media/img/photo03.png" alt="flowers">
+                <img src="./assets/media/img/photo04.png" alt="squirrel">
+                <img src="./assets/media/img/photo13.jpg" alt="motorcyle">
+            </div>
+            <div id="buttons">
+            <button type="button" onclick="slides()">Previous</button>
+            <button type="button" onclick="nextImage()">Next </button>
+            </div>
+        </p>
 
     <p id="experience">
     <h2>Experience</h2>
