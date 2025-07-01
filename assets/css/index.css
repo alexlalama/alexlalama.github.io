@@ -1,5 +1,8 @@
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
+
+/* Variables */
 :root{
     --background-color: #97B098;
     --text-color: #B8B08D;
@@ -7,17 +10,21 @@
     --text-color-three: #BAD7F2;
     --box-color: #F2D492;
 }
+
+
 *{
     box-sizing: border-box;
-    font-family:'Julius Sans One', sans-serif;
     text-decoration: none;
 }
 
-body{
-    background-color: var(--background-color);
-    text-align: center;
-    color: black;
+.name{
+    background-color: white;
+    color:black;
+    max-width: 80%;
+    margin: auto;
 }
+
+/* Navigation Styles */
 
 nav{
     margin: auto;
@@ -29,31 +36,74 @@ nav{
     max-width: 80%;
     padding: 10px;
     color: var(--text-color);
+
+}
+
+a:link {
+  color: var(--text-color);
+}
+
+a:visited {
+  color: var(--text-color-three);
+}
+
+a:hover, a.link:hover  {
+  color: var(--text-color-two);
+}
+
+a:active {
+  color: black;
+}
+
+a.link:link {
+  color: var(--text-color-two);
+}
+
+a.link:visited {
+  color: navy;
+}
+
+a.link:hover  {
+  color: firebrick;
+}
+
+a.link:active {
+  color: white;
+}
+
+/* Styles for main section */
+
+body{
+    background-color: var(--background-color);
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
 }
 
 main{
     background-color: var(--box-color);
     max-width: 80%;
     margin: auto;
-}
-a:link {
-  color: var(--text-color);
-}
-
-/* visited link */
-a:visited {
-  color: var(--text-color-three);
+    text-align: left;
+    font-family: 'Times New Roman', sans-serif, Times;
+    font-size: 20px;
 }
 
-/* mouse over link */
-a:hover {
-  color: var(--text-color-two);
+h2, h3{
+    text-align: center;
 }
 
-/* selected link */
-a:active {
-  color: black;
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
 }
+button{
+    padding: 5px;
+}
+/* Styles for footer section */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -62,6 +112,15 @@ footer{
     color: white;
     max-width: 80%;
     margin: auto;
+}
+
+footer, nav, .name{
+    font-family:'Julius Sans One', sans-serif;
+    font-size: 23px;
+}
+
+#images > img{
+    max-width: 30%;
 }
 /* 
 #name{
