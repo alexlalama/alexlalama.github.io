@@ -1,19 +1,7 @@
-
-var slideShow = [];
 var i= 0;
-function slides(){
-    for(i in slideShow)
-    {
-        slideShow[i] = image;
-        i++;
-        alert("slides")
-    }
-}
-function nextImage(){
-    
 
-}
+var classItem = document.createElement('div')
+var educationSection = document.querySelector('educationSection')
 
-function previousImage(){
 
-}
+console.log('hello')
