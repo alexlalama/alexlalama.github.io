@@ -21,7 +21,7 @@
         </li>
     </ul> */}
 
-    var ul = document.createElement('ul')// cry i took the top off
+    var ul = document.createElement('ul')
     ul.className("nav")
     function ul(poop){
         // loop 
