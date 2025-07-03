@@ -114,6 +114,7 @@ footer{
     margin: auto;
 }
 
+
 footer, nav, .name{
     font-family:'Julius Sans One', sans-serif;
     font-size: 23px;
@@ -122,6 +123,27 @@ footer, nav, .name{
 #images > img{
     max-width: 30%;
 }
+
+.title,.title > .company{
+    display: flex;
+    flex-direction: row;
+}
+.title > .company{
+    font-weight: normal;
+}
+.job{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.job > .title{
+    font-weight: bold;
+}
+.job > .duration{
+    font-style: italic;
+}
+
 /* 
 #name{
     font-size: 30px;
