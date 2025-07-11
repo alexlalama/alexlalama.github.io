@@ -29,7 +29,8 @@ async function getData() {
   }
 }
 
-// 2. Once we have all the required JSON data, we need to make sure we get a RANDOM word from our gameWords variable and set it as our targetWord
+// 2. Once we have all the required JSON data, we need to make sure we get a 
+// RANDOM word from our gameWords variable and set it as our targetWord
 async function initializeGame() {
   try {
     let currentDate = new Date().toLocaleDateString();
@@ -42,7 +43,7 @@ async function initializeGame() {
           if (gameState.boardState.length > 0) {
             gameState.boardState.forEach(function (guess) {
               let guessLetters = guess.split('');
-              guessLetters.forEach(addLetter);
+              guessLetters.forEach(addLetter());
               submitWordGuess(guess);
             });
           }
