@@ -1,5 +1,4 @@
-
-for(var row = 0; row <= 3; row++){
+for(let row = 0; row <= 3; row++){
     var letter = document.createElementByTagName("p");
     var holder = document.getElementById("search-holder");
     holder.append(letter);
