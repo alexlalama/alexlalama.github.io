@@ -1,7 +1,7 @@
-row = 0
-for(row = 0; row <= 3; row++){
-    letter = document.createElementByTagName("p");
-    holder = document.getElementById("search-holder");
+
+for(var row = 0; row <= 3; row++){
+    var letter = document.createElementByTagName("p");
+    var holder = document.getElementById("search-holder");
     holder.append(letter);
     //letter.className(''); // class name
     /*
