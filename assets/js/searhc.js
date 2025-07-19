@@ -5,9 +5,9 @@ var button_four = document.getElementById('');
 var colletter;
 
 var ranWord = Math.floor(Math.random() * 5);
-function generate(){
+function generateFour(){
     /* */
-
+    
 }
 
 for(let row = 0; row < 3; row++){
