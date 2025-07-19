@@ -1,6 +1,6 @@
 var row;
 for(let row = 0; row <= 3; row++){
-    var letter = document.createElementByTagName("p");
+    var letter = document.createElement("p");
     var holder = document.getElementById("#search-holder");
     holder.append(letter);
     //letter.className(''); // class name
