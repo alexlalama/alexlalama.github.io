@@ -2,7 +2,7 @@ console.clear();
 var row;
 var col;
 var button_four = document.getElementById('');
-
+var colletter;
 
 var ranWord = Math.floor(Math.random() * 5);
 function generate(){
@@ -14,12 +14,12 @@ for(let row = 0; row < 3; row++){
     var letter = document.createElement('p');
     var holder = document.getElementById("search-holder");
     holder.append(letter);
-    letter.innerHTML = 'l'
+    letter.innerHTML = 'l';
     letter.classList.add("letters"); // class name
     for(let col = 0; col < 3; col++){
-        letter = document.createElement('p');
-        letter.classList.add("letters"); // class name 
-        
+        colletter = document.createElement('p');
+        colletter.classList.add("letters"); // class name 
+        colletter.innerHTML = 'l';
         console.log("log");
         }
 }
