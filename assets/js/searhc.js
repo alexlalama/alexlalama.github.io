@@ -1,11 +1,12 @@
 var row;
+var col;
 for(let row = 0; row <= 3; row++){
     var letter = document.createElement("p");
     var holder = document.getElementById("search-holder");
     holder.append(letter);
-    //letter.className(''); // class name
+    //letter.classList.add("letters'); // class name
     /*
-    for(col = 0; col <= 3; col++){
+    for(let col = 0; col <= 3; col++){
         letter = document.createElementByTagName("p");
         letter.className(''); // class name 
 
