@@ -14,13 +14,13 @@ for(let row = 0; row < 3; row++){
     var letter = document.createElement('p');
     var holder = document.getElementById("search-holder");
     holder.append(letter);
-    letter.innerHTML = 'l';
+    letter.innerHTML = 'ls';
     letter.classList.add("letters"); // class name
     for(let col = 0; col < 3; col++){
         colletter = document.createElement('p');
         letter.append(colletter);
         colletter.classList.add("letters"); // class name 
-        colletter.innerHTML = 'ls';
+        colletter.innerHTML = 'col';
 
         }
 }
