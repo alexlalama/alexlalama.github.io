@@ -8,7 +8,7 @@ for(let row = 0; row <= 3; row++){
     letter.classList.add("letters"); // class name
 
     for(let col = 0; col <= 3; col++){
-        letter = document.createElementByTagName("p");
+        letter = document.createElement('p');
         letter.classList.add("letters") // class name 
         letter.innerText = 'letters'
         }
