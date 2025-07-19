@@ -19,7 +19,7 @@ for(let row = 0; row < 3; row++){
     for(let col = 0; col < 3; col++){
         letter = document.createElement('p');
         letter.classList.add("letters"); // class name 
-        letter.innerHTML = 'letters';
+        
         console.log("log");
         }
 }
