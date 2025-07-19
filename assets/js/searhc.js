@@ -18,9 +18,10 @@ for(let row = 0; row < 3; row++){
     letter.classList.add("letters"); // class name
     for(let col = 0; col < 3; col++){
         colletter = document.createElement('p');
+        letter.append(colletter);
         colletter.classList.add("letters"); // class name 
         colletter.innerHTML = 'l';
-        console.log("log");
+
         }
 }
 
