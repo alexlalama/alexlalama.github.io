@@ -1,3 +1,4 @@
+console.clear();
 var row;
 var col;
 for(let row = 0; row <= 3; row++){
