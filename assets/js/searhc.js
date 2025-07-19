@@ -1,7 +1,7 @@
 var row;
 var col;
 for(let row = 0; row <= 3; row++){
-    var letter = document.createElement("p");
+    var letter = document.createElement('p');
     var holder = document.getElementById("search-holder");
     holder.append(letter);
     //letter.classList.add("letters'); // class name
