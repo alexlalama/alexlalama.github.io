@@ -13,6 +13,8 @@ for(let row = 0; row <= 3; row++){
         letter.innerText = 'letters'
         }
     }
+
+    // if  button selected, choose random word with number 
 /*file = open("./../words.txt");
     for(word in file){
         for(letter in each word){
