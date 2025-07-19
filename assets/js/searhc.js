@@ -7,7 +7,7 @@ var colletter;
 var ranWord = Math.floor(Math.random() * 5);
 function generateFour(){
     /* */
-    
+
 }
 
 for(let row = 0; row < 3; row++){
@@ -20,7 +20,7 @@ for(let row = 0; row < 3; row++){
         colletter = document.createElement('p');
         letter.append(colletter);
         colletter.classList.add("letters"); // class name 
-        colletter.innerHTML = 'l';
+        colletter.innerHTML = 'ls';
 
         }
 }
