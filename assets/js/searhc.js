@@ -14,6 +14,7 @@ function generate_four(){
         letter.classList.add("letters"); // class name
         for(let col = 0; col < 3; col++){
             colletter = document.createElement('div');
+            letter.append(colletter);
             // colletter.classList.add("letters"); // class name 
             colletter.innerHTML = 'col';
         }
