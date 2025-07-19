@@ -2,6 +2,7 @@ console.clear();
 var row;
 var col;
 var colletter;
+document.getElementById("four").addEventListener("click", generate_four);
 var ranWord = Math.floor(Math.random() * 5);
 
 function generate_four(){
