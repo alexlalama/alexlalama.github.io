@@ -1,13 +1,10 @@
 console.clear();
 var row;
 var col;
-var button_four = document.getElementById('');
 var colletter;
-
 var ranWord = Math.floor(Math.random() * 5);
+
 function generate_four(){
-        
-    
     for(let row = 0; row < 3; row++){
         var letter = document.createElement('p');
         var holder = document.getElementById("search-holder");
