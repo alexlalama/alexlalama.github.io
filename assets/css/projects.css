@@ -1,3 +1,41 @@
+
+#button-holders{
+    display: grid;
+    grid-template-areas:
+    'one two three plus'
+    'four five six minus'
+    'seven eight nine mulitply'
+    'zero equals';
+
+}
+#one{
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}#three{
+  grid-area:three;
+}#four{
+  grid-area: four;
+}#five{
+  grid-area: five;
+}#six{
+  grid-area: six;
+}#seven{
+  grid-area: seven;
+}#eight{
+  grid-area: eight;
+}#nine{
+  grid-area: nine;
+}#mulitply{
+  grid-area: mulitply;
+}#zero{
+  grid-area: zero;
+}#one{
+  grid-area: one;
+}#equals{
+  grid-area: equals;
+}
 .note-container{
     box-shadow: 4px 4px 8px #333333;
     position: relative;
@@ -174,3 +212,9 @@
     background-color: var(--green);
   }
   
+
+.letters{
+  color: yellowgreen;
+  display: flex;
+  flex-direction: row;
+}
