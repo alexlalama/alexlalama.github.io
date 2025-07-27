@@ -1,10 +1,10 @@
 #button-holders{
     display: grid;
     grid-template-areas:
-    'one two three plus'
-    'four five six minus'
-    'seven eight nine mulitply'
-    'zero equals';
+    "one two three plus"
+    "four five six minus"
+    "seven eight nine mulitply"
+    "zero equals";
 
 }
 #one{
