@@ -36,6 +36,7 @@
 }#equals{
   grid-area: equals;
 }
+/*
 .note-container{
     box-shadow: 4px 4px 8px #333333;
     position: relative;
@@ -69,7 +70,6 @@
         padding: 5px 10px;
     }
 
-    /* Global Styles & Custom Properties */
 :root {
     box-sizing: border-box;
     --green: #6aaa64;
@@ -104,7 +104,6 @@
     padding: 0 10px;
   }
   
-  /* Header */
   header {
     border-bottom: 1px solid var(--darkGray);
   }
@@ -118,7 +117,6 @@
     color: var(--ritOrange);
   }
   
-  /* Gameboard */
   .gameboard {
     width: 350px;
     max-width: 100%;
@@ -146,14 +144,14 @@
     user-select: none;
   }
   
-  /* Keyboard */
+
   .keyboard {
     display: flex;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+    
     touch-action: interaction;
   }
   
@@ -183,7 +181,7 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    /* touch-action added here to prevent double tapping to zoom for mobile devices */
+
     touch-action: interaction;
   }
   
@@ -193,7 +191,6 @@
     font-size: 12px;
   }
   
-  /* Shared */
   .gameboard .card[data-state='wrong'],
   .keyboard button[data-state='wrong'] {
     border: none;
@@ -218,3 +215,4 @@
   display: flex;
   flex-direction: row;
 }
+*/
