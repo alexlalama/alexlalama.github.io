@@ -46,6 +46,9 @@
 #zero{
   grid-area: zero;
 }
+#divide{
+  grid-area: divide;  
+}
 #equals{
   grid-area: equals;
 }
