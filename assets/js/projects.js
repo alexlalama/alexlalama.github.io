@@ -1,6 +1,7 @@
-import { getRandomListItem } from './../js/utils.js';
-
 console.clear();
+
+
+import { getRandomListItem } from './../js/utils.js';
 
 let dictionary, gameWords, targetWord;
 let gameboard = document.querySelector('.gameboard');
@@ -87,7 +88,7 @@ function loadGameState() {
     return false;
   }
 }
-function saveGameState(state) {
+ function saveGameState(state) {
   localStorage.setItem('alexs-wordle', JSON.stringify(state));
 }
 
