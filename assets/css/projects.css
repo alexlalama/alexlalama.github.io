@@ -1,9 +1,9 @@
 div#button-holders{
   display: grid;
   grid-template-areas:
-  "one two three plus",
-  "four five six minus",
-  "seven eight nine mulitply",
+  "one two three plus"
+  "four five six minus"
+  "seven eight nine mulitply"
   "zeronum divide equals ";
 
 }
