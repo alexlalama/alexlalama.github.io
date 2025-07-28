@@ -2,10 +2,10 @@ div#button-holders{
   max-width: 80%;
   display: grid;
   grid-template-areas:
-  "one two three plus"
-  "four five six minus"
-  "seven eight nine mulitply"
-  "zeronum equals equals divide ";
+  "one two three plus clear"
+  "four five six minus clear"
+  "seven eight nine mulitply clear"
+  "zeronum equals equals divide clear";
 
 }
 button#one{
@@ -52,6 +52,9 @@ button#divide{
 }
 button#equals{
   grid-area: equals;
+}
+button#clear{
+  grid-area: clear;
 }
 /*
 .note-container{
