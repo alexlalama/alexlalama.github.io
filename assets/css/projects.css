@@ -1,10 +1,10 @@
 #button-holders{
-    display: grid;
-    grid-template-areas:
-    "one two three plus"
-    "four five six minus"
-    "seven eight nine mulitply"
-    "zero divide equals ";
+  display: grid;
+  grid-template-areas:
+  "one two three plus",
+  "four five six minus",
+  "seven eight nine mulitply",
+  "zeronum divide equals ";
 
 }
 #one{
@@ -44,7 +44,7 @@
   grid-area: mulitply;
 }
 #zero{
-  grid-area: zero;
+  grid-area: zeronum;
 }
 #divide{
   grid-area: divide;  
