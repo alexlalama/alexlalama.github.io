@@ -7,49 +7,49 @@
   "zeronum divide equals ";
 
 }
-#one{
+button#one{
   grid-area: one;
 }
-#two{
+button#two{
   grid-area: two;
 }
-#three{
+button#three{
   grid-area: three;
 }
-#plus{
+button#plus{
   grid-area: plus;
 }
-#four{
+button#four{
   grid-area: four;
 }
-#five{
+button#five{
   grid-area: five;
 }
-#six{
+button#six{
   grid-area: six;
 }
-#minus{
+button#minus{
   grid-area: minus;
 }
-#seven{
+button#seven{
   grid-area: seven;
 }
-#eight{
+button#eight{
   grid-area: eight;
 }
-#nine{
+button#nine{
   grid-area: nine;
 }
-#mulitply{
+button#mulitply{
   grid-area: mulitply;
 }
-#zero{
+button#zero{
   grid-area: zeronum;
 }
-#divide{
+button#divide{
   grid-area: divide;  
 }
-#equals{
+button#equals{
   grid-area: equals;
 }
 /*
