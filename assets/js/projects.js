@@ -256,3 +256,16 @@ function checkGameResult(wordGuess) {
     return endGame();
   }
 }
+var one = document.getElementById("button#one");
+var two =  document.getElementById("button#two");
+var three = document.getElementById("button#three");
+var four = document.getElementById("button#four");
+var five =  document.getElementById("button#five");
+var six =  document.getElementById("button#six");
+var seven =  document.getElementById("button#one");
+var eight =  document.getElementById("button#one");
+var nine = document.getElementById("button#one");
+var zero =  document.getElementById("button#one");
+var number = document.getElementById("calculator-number").innerText = 0;
+
+
