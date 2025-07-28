@@ -1,0 +1,6 @@
+monitor
+keyboard
+mouse
+ram
+rom
+cpu
