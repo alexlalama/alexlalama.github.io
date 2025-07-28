@@ -1,6 +1,6 @@
 console.clear();
 
-
+/*
 import { getRandomListItem } from './../js/utils.js';
 
 let dictionary, gameWords, targetWord;
@@ -256,16 +256,19 @@ function checkGameResult(wordGuess) {
     return endGame();
   }
 }
-var one = document.getElementById("button#one");
-var two =  document.getElementById("button#two");
-var three = document.getElementById("button#three");
-var four = document.getElementById("button#four");
-var five =  document.getElementById("button#five");
-var six =  document.getElementById("button#six");
-var seven =  document.getElementById("button#one");
-var eight =  document.getElementById("button#one");
-var nine = document.getElementById("button#one");
-var zero =  document.getElementById("button#one");
+*/
+
 var number = document.getElementById("calculator-number").innerText = 0;
+var sum = 0;
+var equals = document.getElementById("button#equals");
 
-
+function getNumberButtons()
+{
+  let buttons = []
+  for(let i = 0; i <= 9; i++)
+  {
+    buttons[i] = document.getElementById("button#"+i);
+  }
+  console.log(buttons[2]);
+}
+getNumberButtons();
