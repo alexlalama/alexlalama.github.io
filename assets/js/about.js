@@ -1,6 +1,8 @@
 var i= 0;
+var arr = []
 
-var classItem = document.createElement('div')
-classItem.innerText = 'hello'
-var educationSection = document.querySelector('educationSection')
-educationSection.append(classItem)
+var image = document.querySelector("img#image1");
+
+image.style.width= '100px';
+console.log(image.style);
+
