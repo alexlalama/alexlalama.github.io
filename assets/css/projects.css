@@ -1,12 +1,10 @@
 div#button-holders{
-  
   display: grid;
   grid-template-areas:
-  "one two three plus clear"
-  "four five six minus clear"
-  "seven eight nine mulitply clear"
-  "zeronum equals equals divide clear";
-
+  "one two three plus equals"
+  "four five six minus equals"
+  "seven eight nine mulitply equals"
+  "clear zeronum zeronum divide equals";
 }
 button#one{
   grid-area: one;
