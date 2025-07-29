@@ -1,5 +1,5 @@
 div#button-holders{
-  max-width: 80%;
+  
   display: grid;
   grid-template-areas:
   "one two three plus clear"
