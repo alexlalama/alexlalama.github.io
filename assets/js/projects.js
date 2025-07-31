@@ -263,7 +263,8 @@ var sum = 0;
 var equals = document.getElementById("button#equals");
 
 
-var clear = document.addEventListener("click", function(){
+var clear = document.getElementById("button#clear");
+clear.addEventListener("click", function(){
   number.innerText= 5;
 });
 
