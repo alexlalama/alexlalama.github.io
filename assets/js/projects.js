@@ -264,5 +264,5 @@ var zero = 0;
 function clear()
 {
     number.innerHTML= zero;
-    console.log(number.innerText);
+    console.log(number.innerHTML);
 }
