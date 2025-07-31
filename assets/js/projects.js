@@ -263,6 +263,6 @@ console.log(number.innerHTML);
 var zero = 0;
 function clear()
 {
-    number.innerHTML= zero;
+    number.innerHTML= 'this is ttext';
     console.log(number.innerHTML);
 }
