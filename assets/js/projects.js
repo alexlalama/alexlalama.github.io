@@ -266,6 +266,5 @@ var equals = document.getElementById("button#equals");
 var clear = document.getElementById("button#clear");
 clear.addEventListener("click", function(){
     number.innerText= 0;
+    console.log(number.innerText);
 });
-
-getNumberButtons();
