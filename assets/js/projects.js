@@ -258,7 +258,7 @@ function checkGameResult(wordGuess) {
 }
 */
 
-var number = document.getElementById("p#calculator-number");
+var number = document.getElementById("p#calculator-number").innerText;
 var sum = 0;
 var equals = document.getElementById("button#equals");
 
