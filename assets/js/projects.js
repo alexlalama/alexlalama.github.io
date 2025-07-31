@@ -262,13 +262,9 @@ var number = document.getElementById("calculator-number").innerText = 0;
 var sum = 0;
 var equals = document.getElementById("button#equals");
 
-function getNumberButtons()
-{
-  let buttons = []
-  for(let i = 0; i <= 9; i++)
-  {
-    buttons[i] = document.getElementById("button#"+i);
-  }
-  console.log(buttons[2]);
-}
+
+var clear = document.addEventListener("click", function(){
+  number.innerText= 5;
+});
+
 getNumberButtons();
