@@ -258,13 +258,11 @@ function checkGameResult(wordGuess) {
 }
 */
 
-var number = document.getElementById("p#calculator-number").innerText;
-var sum = 0;
-var equals = document.getElementById("button#equals");
+var number = document.getElementById("p#calculator-number");
 
-
-var clear = document.getElementById("button#clear");
-clear.addEventListener("click", function(){
-    number.innerHTML= 0;
+var zero = 0;
+function clear()
+{
+    number.innerHTML= zero;
     console.log(number.innerText);
-});
+}
