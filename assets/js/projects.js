@@ -260,12 +260,15 @@ function checkGameResult(wordGuess) {
 
 function buttonVar(name)
 {
+  /*
+   * Select and create button HTML element
+   */
   let nameButton = name;
   nameButton  = document.querySelector(`button${nameButton}`);
   return nameButton;
 }
 
-const arrayOfButtons = [
+const arrayOfButtons = [ // Array of Buttons
   buttonVar("button0"),
   buttonVar("button1"),
   buttonVar("button2"),
@@ -278,12 +281,15 @@ const arrayOfButtons = [
   buttonVar("button9")
 ];
 
-const clear = document.querySelector("button#clear");
-const calculatorNumber = document.querySelector("p#calculator-number").innerText = "0";
-parseInt(calculatorNumber);
+const clear = document.querySelector("button#clear"); // Clear button
+const calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+parseInt(calculatorNumber); // parse string into number
 // clear function
-console.log(calculatorNumber);
+
 clear.addEventListener("click", function(){
+  /*
+   * Clear calculator number
+   */
     calculatorNumber = 0;
 })
 
