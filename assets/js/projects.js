@@ -258,10 +258,10 @@ function checkGameResult(wordGuess) {
 }
 */
 
-var number = document.querySelector("p#calculator-number");
-console.log(number.innerText);
-var clear = document.querySelector("button#clear");
-console.log(clear);
+
+
+var clear = document.querySelector("p#calculator-number");
+// clear function
 clear.addEventListener("click", function(){
     clear.innerText = 0;
 })
