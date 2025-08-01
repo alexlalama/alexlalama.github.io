@@ -292,6 +292,6 @@ var answered = false;
 while(!answered)
 {
   for(var i = 0; i <= arrayOfButtons.length() -1; i++){
-     i = 0;
+      answered = true;
   }
 }
