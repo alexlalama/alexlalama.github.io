@@ -260,25 +260,38 @@ function checkGameResult(wordGuess) {
 
 function buttonVar(name)
 {
+  var arrayOfButtons = [];
   var nameButton = name;
   nameButton  = document.querySelector(`button${nameButton}`);
+  
   return nameButton;
 }
-buttonVar("button0");
-buttonVar("button1");
-buttonVar("button2");
-buttonVar("button3");
-buttonVar("button4");
-buttonVar("button5");
-buttonVar("button6");
-buttonVar("button7");
-buttonVar("button8");
-buttonVar("button9");
 
-console.log(buttonVar("#button0"));
+var arrayOfButtons = [
+  buttonVar("button0"),
+  buttonVar("button1"),
+  buttonVar("button2"),
+  buttonVar("button3"),
+  buttonVar("button4"),
+  buttonVar("button5"),
+  buttonVar("button6"),
+  buttonVar("button7"),
+  buttonVar("button8"),
+  buttonVar("button9")
+];
+
 var clear = document.querySelector("button#clear");
-var calculatorNumber = document.querySelector("p#calculator-number");
+var calculatorNumber = document.querySelector("p#calculator-number").parseInt().innerText = 0;
 // clear function
+console.log(calculatorNumber);
 clear.addEventListener("click", function(){
     calculatorNumber.innerText = 0;
 })
+
+var answered = false;
+while(!answered)
+{
+  for(var i = 0; i <= arrayOfButtons.length() -1; i++){
+    return 0;
+  }
+}
