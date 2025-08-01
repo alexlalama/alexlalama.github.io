@@ -261,7 +261,7 @@ function checkGameResult(wordGuess) {
 function buttonVar(name)
 {
   var nameButton = name;
-  nameButton  = document.querySelector(`button#${nameButton}`);
+  nameButton  = document.querySelector(`button${nameButton}`);
   return nameButton;
 }
 buttonVar("button0");
