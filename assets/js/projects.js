@@ -260,14 +260,12 @@ function checkGameResult(wordGuess) {
 
 function buttonVar(name)
 {
-  var arrayOfButtons = [];
-  var nameButton = name;
+  let nameButton = name;
   nameButton  = document.querySelector(`button${nameButton}`);
-  
   return nameButton;
 }
 
-var arrayOfButtons = [
+const arrayOfButtons = [
   buttonVar("button0"),
   buttonVar("button1"),
   buttonVar("button2"),
@@ -280,8 +278,8 @@ var arrayOfButtons = [
   buttonVar("button9")
 ];
 
-var clear = document.querySelector("button#clear");
-var calculatorNumber = document.querySelector("p#calculator-number").innerText = 0;
+const clear = document.querySelector("button#clear");
+const calculatorNumber = document.querySelector("p#calculator-number").innerText = 0;
 parseInt(calculatorNumber);
 // clear function
 console.log(calculatorNumber);
@@ -289,10 +287,10 @@ clear.addEventListener("click", function(){
     calculatorNumber.innerText = 0;
 })
 
-var answered = false;
+const answered = false;
 while(!answered)
 {
-  for(var i = 0; i <= arrayOfButtons.length-1; i++){
+  for(let i = 0; i <= arrayOfButtons.length-1; i++){
       parseInt(arrayOfButtons[i]);
       console.log(arrayOfButtons);
   }
