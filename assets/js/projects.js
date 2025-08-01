@@ -274,10 +274,11 @@ buttonVar("button8");
 buttonVar("button9");
 
 console.log(buttonVar("#button0"));
-var clear = document.querySelector("p#calculator-number");
+var clear = document.querySelector("button#clear");
+var calculatorNumber = document.querySelector("p#calculator-number");
 // clear function
 clear.addEventListener("click", function(){
-    clear.innerText = 0;
+    calculatorNumber.innerText = 0;
 })
 
 var entered = false;
