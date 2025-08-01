@@ -260,9 +260,7 @@ function checkGameResult(wordGuess) {
 
 var number = document.querySelector("p#calculator-number");
 console.log(number.innerText);
-var zero = 0;
 function clear()
 {
-    number.innerText= 'this is ttext';
-    console.log(number.innerHTML);
+    console.log("function");
 }
