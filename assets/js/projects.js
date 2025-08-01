@@ -260,7 +260,9 @@ function checkGameResult(wordGuess) {
 
 var number = document.querySelector("p#calculator-number");
 console.log(number.innerText);
-function clear()
-{
+var clear = document.querySelector("button#clear");
+console.log(clear);
+clear.addEventListener("click", function(){
     console.log("function");
-}
+})
+
