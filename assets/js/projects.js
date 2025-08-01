@@ -281,8 +281,8 @@ const arrayOfButtons = [ // Array of Buttons
   buttonVar("button9")
 ];
 
-const clear = document.querySelector("button#clear"); // Clear button
-const calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+var clear = document.querySelector("button#clear"); // Clear button
+var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
 parseInt(calculatorNumber); // parse string into number
 // clear function
 
