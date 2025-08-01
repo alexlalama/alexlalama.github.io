@@ -264,7 +264,7 @@ function buttonVar(name)
    * Select and create button HTML element
    */
   let nameButton = name;
-  nameButton  = document.querySelector(`button${nameButton}`);
+  nameButton  = document.querySelector(`button${nameButton}`).innerText;
   return nameButton;
 }
 
@@ -299,7 +299,7 @@ while(!answered)
   for(let i = 0; i <= arrayOfButtons.length-1; i++)
     {
       parseInt(arrayOfButtons[i]);
-      console.log(arrayOfButtons);
+      console.log(arrayOfButtons[i]);
       answered= true;
       arrayOfButtons[i].addEventListener("click",function(){
           calculatorNumber = arrayOfButtons[i];
