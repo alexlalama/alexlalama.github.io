@@ -263,6 +263,6 @@ console.log(number.innerText);
 var clear = document.querySelector("button#clear");
 console.log(clear);
 clear.addEventListener("click", function(){
-    console.log("function");
+    clear.innerText = 0;
 })
 
