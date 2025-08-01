@@ -260,7 +260,8 @@ function checkGameResult(wordGuess) {
 
 function buttonVar(name)
 {
-  name = querySelector(`button#${name}`);
+  nameButton = name;
+  nameButton = querySelector(`button#${nameButton}`);
 }
 buttonVar("button0");
 buttonVar("button1");
