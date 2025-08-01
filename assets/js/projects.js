@@ -282,6 +282,7 @@ var arrayOfButtons = [
 
 var clear = document.querySelector("button#clear");
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = 0;
+parseInt(calculatorNumber);
 // clear function
 console.log(calculatorNumber);
 clear.addEventListener("click", function(){
@@ -291,7 +292,8 @@ clear.addEventListener("click", function(){
 var answered = false;
 while(!answered)
 {
-  for(var i = 0; i <= arrayOfButtons.length() -1; i++){
-      answered = true;
+  for(var i = 0; i <= arrayOfButtons.length-1; i++){
+      parseInt(arrayOfButtons[i]);
+      console.log(arrayOfButtons);
   }
 }
