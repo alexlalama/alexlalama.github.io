@@ -293,5 +293,6 @@ while(!answered)
   for(let i = 0; i <= arrayOfButtons.length-1; i++){
       parseInt(arrayOfButtons[i]);
       console.log(arrayOfButtons);
+      answered= true;
   }
 }
