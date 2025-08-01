@@ -287,7 +287,7 @@ clear.addEventListener("click", function(){
     calculatorNumber = 0;
 })
 
-const answered = false;
+var answered = false;
 while(!answered)
 {
   for(let i = 0; i <= arrayOfButtons.length-1; i++)
