@@ -279,12 +279,12 @@ const arrayOfButtons = [
 ];
 
 const clear = document.querySelector("button#clear");
-const calculatorNumber = document.querySelector("p#calculator-number").innerText = 0;
+const calculatorNumber = document.querySelector("p#calculator-number").innerText = "0";
 parseInt(calculatorNumber);
 // clear function
 console.log(calculatorNumber);
 clear.addEventListener("click", function(){
-    calculatorNumber.innerText = 0;
+    calculatorNumber = 0;
 })
 
 const answered = false;
