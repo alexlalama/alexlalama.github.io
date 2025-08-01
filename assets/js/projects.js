@@ -301,11 +301,20 @@ while(!answered)
       parseInt(arrayOfButtons[i]);
       console.log(arrayOfButtons);
       answered= true;
-      arrayOfButtons[i].addEventListener('click',function(){
+      arrayOfButtons[i].addEventListener("click",function(){
           calculatorNumber = arrayOfButtons[i];
           console.log(calculatorNumber);
       })
 
-  }
+    }
   
+  
+  
+}
+
+function add()
+{
+  var sum =0;
+  sum += calculatorNumber;
+  return sum;
 }
