@@ -290,9 +290,16 @@ clear.addEventListener("click", function(){
 const answered = false;
 while(!answered)
 {
-  for(let i = 0; i <= arrayOfButtons.length-1; i++){
+  for(let i = 0; i <= arrayOfButtons.length-1; i++)
+    {
       parseInt(arrayOfButtons[i]);
       console.log(arrayOfButtons);
       answered= true;
+      arrayOfButtons[i].addEventListener('click',function(){
+          calculatorNumber = arrayOfButtons[i];
+          console.log(calculatorNumber);
+      })
+
   }
+  
 }
