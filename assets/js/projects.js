@@ -260,8 +260,9 @@ function checkGameResult(wordGuess) {
 
 function buttonVar(name)
 {
-  nameButton = name;
-  nameButton = querySelector(`button#${nameButton}`);
+  var nameButton = name;
+  nameButton  = querySelector(`button#${nameButton}`);
+  return nameButton;
 }
 buttonVar("button0");
 buttonVar("button1");
@@ -281,9 +282,3 @@ var calculatorNumber = document.querySelector("p#calculator-number");
 clear.addEventListener("click", function(){
     calculatorNumber.innerText = 0;
 })
-
-var entered = false;
-while(!entered)
-{
-
-}
