@@ -264,8 +264,8 @@ function buttonVar(name)
    * Select and create button HTML element
    */
   let nameButton = name;
-  nameButton  = document.querySelector(`button${nameButton}`).innerText;
-  return nameButton;
+  nameButton  = document.querySelector(`button${nameButton}`);
+  return nameButton.innerText;
 }
 
 const arrayOfButtons = [ // Array of Buttons
@@ -283,15 +283,14 @@ const arrayOfButtons = [ // Array of Buttons
 
 var clear = document.querySelector("button#clear"); // Clear button
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
-parseInt(calculatorNumber); // parse string into number
+caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
 // clear function
-
-clear.addEventListener("click", function(){
+function clear(){
   /*
    * Clear calculator number
    */
-    calculatorNumber = 0;
-})
+    calculatorNumber.value = 0;
+}
 
 var answered = false;
 while(!answered)
