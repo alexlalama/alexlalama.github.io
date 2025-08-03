@@ -285,11 +285,11 @@ var clear = document.querySelector("button#clear"); // Clear button
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
 caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
 // clear function
-function clear(){
+function clearFunction(){
   /*
    * Clear calculator number
    */
-    calculatorNumber.value = 0;
+    calculatorNumber.innerText = 0;
 }
 
 var answered = false;
