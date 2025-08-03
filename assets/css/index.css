@@ -39,21 +39,6 @@ nav{
 
 }
 
-a:link {
-  color: var(--text-color);
-}
-
-a:visited {
-  color: var(--text-color-three);
-}
-
-a:hover, a.link:hover  {
-  color: var(--text-color-two);
-}
-
-a:active {
-  color: black;
-}
 
 a.link:link {
   color: var(--text-color-two);
