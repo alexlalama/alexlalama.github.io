@@ -6,7 +6,7 @@ div#button-holders{
   "seven eight nine mulitply equals"
   "clear zeronum zeronum divide equals";
 }
-button#one{
+button#1{
   grid-area: one;
 }
 button#two{
@@ -42,7 +42,7 @@ button#nine{
 button#mulitply{
   grid-area: mulitply;
 }
-button#zero{
+button#0{
   grid-area: zeronum;
 }
 button#divide{
