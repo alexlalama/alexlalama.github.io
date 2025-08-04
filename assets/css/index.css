@@ -38,7 +38,9 @@ nav{
     color: var(--text-color);
 
 }
-
+a.link{
+    color: red;
+}
 
 a.link:link {
   color: var(--text-color-two);
