@@ -265,6 +265,7 @@ function buttonVar(name)
    */
   
   return document.querySelector(`button${name}`);
+  
 }
 
 const arrayOfButtons = [ // Array of Buttons
@@ -279,20 +280,22 @@ const arrayOfButtons = [ // Array of Buttons
   buttonVar("button8"),
   buttonVar("button9")
 ];
-console.log(arrayOfButtons[8]);
-var clear = document.querySelector("button#clear"); // Clear button
-var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
-caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
+console.log(buttonVar[8]);
+// var clear = document.querySelector("button#clear"); // Clear button
+// var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+// caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
 // clear function
+
 function clearFunction(){
   /*
    * Clear calculator number
    */
     calculatorNumber.innerText = 0;
 }
-/*
-var answered = false;
-while(!answered)
+
+// var answered = false;
+
+/*while(!answered)
 {
   for(let i = 0; i <= arrayOfButtons.length-1; i++)
     {
