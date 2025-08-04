@@ -289,7 +289,7 @@ function clearFunction(){
   /*
    * Clear calculator number
    */
-    calculatorNumber.innerText = 0;
+    calculatorNumber.innerText = 34;
 }
 
 // var answered = false;
