@@ -264,7 +264,7 @@ function buttonVar(name)
    * Select and create button HTML element
    */
   
-  return document.querySelector(`button${name}`);
+  return document.querySelector(`button#${name}`);
   
 }
 var zero = buttonVar("button0");
