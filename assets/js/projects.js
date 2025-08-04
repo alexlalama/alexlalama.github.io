@@ -22,7 +22,7 @@ var six = buttonVar("button6");
 var seven = buttonVar("button7");
 var eight = buttonVar("button8");
 var nine = buttonVar("button9");
-var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+var calculatorNumber = document.querySelector("p#calculator-number") ="0"; // Calculator number holder
 
  // var clear = document.querySelector("button#clear"); // Clear button
 Number(calculatorNumber); // parse string into number
