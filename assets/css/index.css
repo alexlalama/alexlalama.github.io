@@ -38,9 +38,12 @@ nav{
     color: var(--text-color);
 
 }
+<<<<<<< HEAD
 a.link{
     color: red;
 }
+=======
+>>>>>>> 62e380317e26328befeabfb3cf4ebca93f27a477
 
 a.link:link {
   color: var(--text-color-two);
