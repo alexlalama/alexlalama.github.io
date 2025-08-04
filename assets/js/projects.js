@@ -25,7 +25,7 @@ var nine = buttonVar("button9");
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
 
 // var clear = document.querySelector("button#clear"); // Clear button
-console.log(Number(calculatorNumber)); // parse string into number
+console.log(calculatorNumber); // parse string into number
 
 
 function clearFunction(){
