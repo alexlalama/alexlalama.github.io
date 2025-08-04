@@ -267,19 +267,18 @@ function buttonVar(name)
   return document.querySelector(`button${name}`);
   
 }
+var zero = buttonVar("button0");
+var one = buttonVar("button1");
+var two = buttonVar("button2");
+var three = buttonVar("button3");
+var four = buttonVar("button4");
+var five = buttonVar("button5");
+var six = buttonVar("button6");
+var seven = buttonVar("button7");
+var eight = buttonVar("button8");
+var nine = buttonVar("button9");
 
-const arrayOfButtons = [ // Array of Buttons
-  buttonVar("button0").innerText,
-  buttonVar("button1").innerText,
-  buttonVar("button2").innerText,
-  buttonVar("button3").innerText,
-  buttonVar("button4").innerText,
-  buttonVar("button5").innerText,
-  buttonVar("button6").innerText,
-  buttonVar("button7").innerText,
-  buttonVar("button8").innerText,
-  buttonVar("button9").innerText
-];
+const arrayOfButtons = [ zero, one, two, three, four, five, six, seven, eight, nine ];
 console.log(buttonVar[8]);
 // var clear = document.querySelector("button#clear"); // Clear button
 // var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
