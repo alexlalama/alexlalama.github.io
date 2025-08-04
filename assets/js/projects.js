@@ -281,9 +281,9 @@ var nine = buttonVar("button9");
 const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
 console.log(zero);
 // var clear = document.querySelector("button#clear"); // Clear button
-// var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
-// caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
-// clear function
+var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+Number(calculatorNumber); // parse string into number
+
 
 function clearFunction(){
   /*
