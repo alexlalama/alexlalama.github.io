@@ -32,7 +32,7 @@ function clearFunction(){
   /*
    * Clear calculator number
    */
-    calculatorNumber.innerText = 34;
+    return calculatorNumber.innerText = 34;
 }
 
 // var answered = false;
