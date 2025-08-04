@@ -269,16 +269,16 @@ function buttonVar(name)
 }
 
 const arrayOfButtons = [ // Array of Buttons
-  buttonVar("button0"),
-  buttonVar("button1"),
-  buttonVar("button2"),
-  buttonVar("button3"),
-  buttonVar("button4"),
-  buttonVar("button5"),
-  buttonVar("button6"),
-  buttonVar("button7"),
-  buttonVar("button8"),
-  buttonVar("button9")
+  buttonVar("button0").innerText,
+  buttonVar("button1").innerText,
+  buttonVar("button2").innerText,
+  buttonVar("button3").innerText,
+  buttonVar("button4").innerText,
+  buttonVar("button5").innerText,
+  buttonVar("button6").innerText,
+  buttonVar("button7").innerText,
+  buttonVar("button8").innerText,
+  buttonVar("button9").innerText
 ];
 console.log(buttonVar[8]);
 // var clear = document.querySelector("button#clear"); // Clear button
