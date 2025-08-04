@@ -24,17 +24,17 @@ var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
 
-var clear = document.querySelector("button#clear"); // Clear button
-console.log(calculatorNumber); // parse string into number
+ // var clear = document.querySelector("button#clear"); // Clear button
+Number(calculatorNumber); // parse string into number
 
 
-clear.addEventListener("click", function() 
+function clearFunction() 
 {
   /*
    * Clear calculator number
    */
     return calculatorNumber.innerText = 34;
-})
+}
 
 // var answered = false;
 
