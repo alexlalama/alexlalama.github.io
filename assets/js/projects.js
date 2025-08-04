@@ -263,9 +263,8 @@ function buttonVar(name)
   /*
    * Select and create button HTML element
    */
-  let nameButton = name;
-  nameButton  = document.querySelector(`button${nameButton}`);
-  return nameButton.innerText;
+  
+  return document.querySelector(`button${name}`);
 }
 
 const arrayOfButtons = [ // Array of Buttons
@@ -280,7 +279,7 @@ const arrayOfButtons = [ // Array of Buttons
   buttonVar("button8"),
   buttonVar("button9")
 ];
-
+console.log(arrayOfButtons[8]);
 var clear = document.querySelector("button#clear"); // Clear button
 var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
 caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
@@ -291,7 +290,7 @@ function clearFunction(){
    */
     calculatorNumber.innerText = 0;
 }
-
+/*
 var answered = false;
 while(!answered)
 {
@@ -310,7 +309,7 @@ while(!answered)
   
   
 }
-
+*/
 function add()
 {
   var sum =0;
