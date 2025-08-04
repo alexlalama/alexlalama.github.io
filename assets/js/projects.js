@@ -263,9 +263,9 @@ function buttonVar(name)
   /*
    * Select and create button HTML element
    */
-  let nameButton = name;
-  nameButton  = document.querySelector(`button${nameButton}`);
-  return nameButton.innerText;
+  
+  return document.querySelector(`button${name}`);
+  
 }
 
 const arrayOfButtons = [ // Array of Buttons
@@ -280,11 +280,12 @@ const arrayOfButtons = [ // Array of Buttons
   buttonVar("button8"),
   buttonVar("button9")
 ];
-
-var clear = document.querySelector("button#clear"); // Clear button
-var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
-caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
+console.log(buttonVar[8]);
+// var clear = document.querySelector("button#clear"); // Clear button
+// var calculatorNumber = document.querySelector("p#calculator-number").innerText = "0"; // Calculator number holder
+// caluculatornumber.value = parseInt(calculatorNumber); // parse string into number
 // clear function
+
 function clearFunction(){
   /*
    * Clear calculator number
@@ -292,8 +293,9 @@ function clearFunction(){
     calculatorNumber.innerText = 0;
 }
 
-var answered = false;
-while(!answered)
+// var answered = false;
+
+/*while(!answered)
 {
   for(let i = 0; i <= arrayOfButtons.length-1; i++)
     {
@@ -310,7 +312,7 @@ while(!answered)
   
   
 }
-
+*/
 function add()
 {
   var sum =0;
