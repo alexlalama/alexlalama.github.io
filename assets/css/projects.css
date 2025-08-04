@@ -6,43 +6,43 @@ div#button-holders{
   "seven eight nine mulitply equals"
   "clear zeronum zeronum divide equals";
 }
-button#1{
+button#buttonone{
   grid-area: one;
 }
-button#two{
+button#button2{
   grid-area: two;
 }
-button#three{
+button#button3{
   grid-area: three;
 }
 button#plus{
   grid-area: plus;
 }
-button#four{
+button#button4{
   grid-area: four;
 }
-button#five{
+button#button5{
   grid-area: five;
 }
-button#six{
+button#button6{
   grid-area: six;
 }
 button#minus{
   grid-area: minus;
 }
-button#seven{
+button#button7{
   grid-area: seven;
 }
-button#eight{
+button#button8{
   grid-area: eight;
 }
-button#nine{
+button#button9{
   grid-area: nine;
 }
 button#mulitply{
   grid-area: mulitply;
 }
-button#0{
+button#button0{
   grid-area: zeronum;
 }
 button#divide{
