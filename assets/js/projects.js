@@ -267,7 +267,7 @@ function buttonVar(name)
   return document.querySelector(`button#${name}`);
   
 }
-var zero = buttonVar("buttonzero").innerText;
+var zero = buttonVar("button0").innerText;
 var one = buttonVar("button1");
 var two = buttonVar("button2");
 var three = buttonVar("button3");
