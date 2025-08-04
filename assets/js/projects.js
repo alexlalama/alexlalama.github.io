@@ -28,7 +28,8 @@ var calculatorNumber = document.querySelector("p#calculator-number").innerText =
 console.log(calculatorNumber); // parse string into number
 
 
-function clearFunction(){
+function clearFunction() 
+{
   /*
    * Clear calculator number
    */
