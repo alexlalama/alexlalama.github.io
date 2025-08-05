@@ -75,6 +75,7 @@ body{
     background-color: var(--background-color);
     text-align: center;
     color: black;
+    max-width: 80%;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -89,6 +90,7 @@ main{
 
 h2, h3{
     text-align: center;
+    max-width: 80%;
 }
 
 #buttons{
@@ -150,6 +152,29 @@ footer, nav, .name{
     justify-content: space-evenly;
 }
 /* 
+@media screen and (min-width: 480px) {
+    body {
+        display:grid;
+        grid-template-areas:
+            "name" 
+            "nav"
+            "main"
+            "footer";
+    }
+    .name{
+        grid-area: name;
+    }
+    nav{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
 #name{
     font-size: 30px;
     font-weight: bold;
