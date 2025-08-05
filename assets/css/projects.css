@@ -1,3 +1,6 @@
+#calculator-number{
+  text-align: right;
+}
 div#button-holders{
   display: grid;
   grid-template-areas:
