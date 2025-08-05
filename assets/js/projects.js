@@ -1,9 +1,6 @@
 console.clear();
 // const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
-function myFunction()
-{
-  console.log(3);
-}
+
 function buttonVar(name)
 {
   /*
