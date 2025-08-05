@@ -16,8 +16,8 @@ var seven = buttonVar("button7");
 var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 
-var calculatorNumber = document.getElementById("p#calculator-number");  // Calculator number holder
-calculatorNumber.innerHTML = 0;
+var calculatorNumber = document.getElementById("p#calculator-number").innerHTML;  // Calculator number holder
+calculatorNumber.innerHTML = Number("0");
 console.log(calculatorNumber.innerHTML);
 function clearFunction() // Clear calculator number
 {
