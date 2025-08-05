@@ -1,8 +1,5 @@
 console.clear();
-
-
 const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
-
 function buttonVar(name)
 {
   /*
@@ -10,7 +7,6 @@ function buttonVar(name)
    */
   
   return document.querySelector(`button#${name}`);
-  
 }
 var zero = buttonVar("button0").innerText;
 var one = buttonVar("button1");
@@ -29,13 +25,11 @@ function clearFunction()
   /*
    * Clear calculator number
    */
-  calculatorNumber.textContent = 34;
+  calculatorNumber.innerHTML = 34;
   console.log(3);
   return 0;
 }
-
 // var answered = false;
-
 /*while(!answered)
 {
   for(let i = 0; i <= arrayOfButtons.length-1; i++)
@@ -47,11 +41,7 @@ function clearFunction()
           calculatorNumber = arrayOfButtons[i];
           console.log(calculatorNumber);
       })
-
     }
-  
-  
-  
 }
 */
 function add()
