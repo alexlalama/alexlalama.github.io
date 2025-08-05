@@ -17,12 +17,13 @@ var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.getElementById("p#calculator-number");  // Calculator number holder
 Number(calculatorNumber);
+console.log(calculatorNumber);
 function clearFunction() 
 {
   /*
    * Clear calculator number
    */
-  calculatorNumber.innerHTML=34;
+  calculatorNumber.textContent=34;
   console.log(3);
   return 0;
 }
