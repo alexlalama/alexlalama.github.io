@@ -16,14 +16,14 @@ var seven = buttonVar("button7");
 var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.getElementById("p#calculator-number");  // Calculator number holder
-Number(calculatorNumber);
-console.log(calculatorNumber);
+console.log(calculatorNumber.innerHTML);
 function clearFunction() 
 {
   /*
    * Clear calculator number
    */
-  calculatorNumber.textContent=34;
+  calculatorNumber.innerHTML= "0";  
+  Number(calculatorNumber);
   console.log(3);
   return 0;
 }
