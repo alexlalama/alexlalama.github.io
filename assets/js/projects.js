@@ -1,5 +1,9 @@
 console.clear();
-const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
+// const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
+function myFunction()
+{
+  console.log(3);
+}
 function buttonVar(name)
 {
   /*
@@ -25,7 +29,7 @@ function clearFunction()
   /*
    * Clear calculator number
    */
-  calculatorNumber.innerHTML = 34;
+  calculatorNumber.innerHTML=34;
   console.log(3);
   return 0;
 }
