@@ -9,7 +9,7 @@ function buttonVar(name)
   
   return document.querySelector(`button#${name}`);
 }
-var zero = buttonVar("button0").innerText;
+var zero = buttonVar("button0");
 var one = buttonVar("button1");
 var two = buttonVar("button2");
 var three = buttonVar("button3");
@@ -20,7 +20,7 @@ var seven = buttonVar("button7");
 var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.getElementById("p#calculator-number"); // Calculator number holder
-
+Number(calculatorNumber);
 function clearFunction() 
 {
   /*
