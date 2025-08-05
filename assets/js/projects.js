@@ -1,12 +1,8 @@
 console.clear();
 // const arrayOfButtons = [zero, one, two, three, four, five, six, seven, eight, nine];
 
-function buttonVar(name)
+function buttonVar(name) // Select HTML element
 {
-  /*
-   * Select HTML element
-   */
-  
   return document.querySelector(`button#${name}`);
 }
 var zero = buttonVar("button0");
@@ -20,7 +16,7 @@ var seven = buttonVar("button7");
 var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.getElementById("p#calculator-number"); 
-calculatorNumber.innerText = "0";// Calculator number holder
+calculatorNumber.innerHTML = "0";// Calculator number holder
 Number(calculatorNumber);
 function clearFunction() 
 {
