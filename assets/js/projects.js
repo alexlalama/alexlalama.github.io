@@ -36,7 +36,7 @@ function clearFunction()
   console.log(3);
   return 0;
 }
-
+clearFunction();
 // var answered = false;
 
 /*while(!answered)
