@@ -24,7 +24,7 @@ var eight = buttonVar("button8");
 var nine = buttonVar("button9");
 var calculatorNumber = document.getElementById("p#calculator-number"); // Calculator number holder
 
- // var clear = document.querySelector("button#clear"); // Clear button
+var clear = document.querySelector("button#clear"); // Clear button
 
 
 function clearFunction() 
