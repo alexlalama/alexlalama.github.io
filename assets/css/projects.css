@@ -1,7 +1,8 @@
-#calculator-number{
+
+/* #calculator-number{
   text-align: right;
 }
-div#button-holders{
+div#button-holder{
   display: grid;
   grid-template-areas:
   "one two three plus equals"
@@ -9,7 +10,7 @@ div#button-holders{
   "seven eight nine mulitply equals"
   "clear zeronum zeronum divide equals";
 }
-button#buttonone{
+button#button1{
   grid-area: one;
 }
 button#button2{
@@ -237,3 +238,57 @@ button#clear{
   flex-direction: row;
 }
 */
+.section
+{
+  background-color: lightslategray;
+}
+.project_holder
+{
+  border: black 1px solid;
+  display: grid;
+  padding: 15px;
+  grid-template-areas:
+  "subtotalTitle subtotal"
+  "percentTitle percent"
+  "totalButton clearButton"
+  "totalTitle total";
+}
+
+#subtotal
+{
+  grid-area: subtotalTitle;
+}
+#subtotalInput
+{
+  grid-area: subtotal;
+  max-height: 50px;
+  
+}
+#percent
+{
+  grid-area: percentTitle;
+}
+#percentInput
+{
+  grid-area: percent;
+  max-height: 50px;
+}
+#totalButton
+{
+  grid-area: totalButton;
+  
+}
+#totalTitle
+{
+  
+  grid-area: totalTitle;
+}
+#total
+{
+  
+  grid-area: total;
+}
+#clearButton
+{
+  grid-area:clear;
+}

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    
+    
+    <script defer src="./assets/js/projects.js"></script>
+    
     <link rel="stylesheet" href="./assets/css/index.css"> 
     <link rel="stylesheet" href="./assets/css/projects.css"> 
-    <script defer src="./assets/js/projects.js"></script>
     <!-- <script type="module" src="./assets/js/searhc.js"></script> -->
 </head>
 <body>
@@ -96,31 +99,43 @@
         -->
 <main>
     <div id="placeholder">
-        <p id="calculator-number"></p>
-        <div id="button-holders">
-            <button type="button" id="button1" >1</button>
-            <button type="button" id="button2">2</button>
-            <button type="button" id="button3">3</button>
-            <button type="button" id="plus" onclick="plus">+</button>
-            <button type="button" id="button4">4</button>
-            <button type="button" id="button5">5</button>
-            <button type="button" id="button6" >6</button>
-            <button type="button" id="minus">-</button>
-            <button type="button"id="button7" >7</button>
-            <button type="button" id="button8">8</button>
-            <button type="button" id="button9" >9</button>
-            <button type="button" id="mulitply">*</button>
-            <button type="button" id="clear" onclick="clearFunction()">clear</button>
-            <button id="button0" >0</button>
-            <button id="equals" onclick="equals()">=</button>
+        <!-- <p id="calculator-number">0</p>
+        <div id="button-holder">
+            <button id="equals">=</button>
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <button id="mulitply">*</button>
             <button id="divide">/</button>
+            <button onclick="clearFunction()">clear</button>
         </div>
-    </div>
+    </div> -->
     <!--
     <div id="search-holder">
         <button id ="four"onclick="generate_four()">4 x 4</button>
     </div>
     -->
+    <button class="projectButton" id="tip-calculator-button">Tip Calculator</button>
+    <!--
+    <div class="project_holder" id="tip-calculator">
+        <p id="subtotal" >Subtotal</p>
+        <input id="subtotalInput" placeholder="Subtotal"></input>
+        <p id="percent">Percent</p>
+        <input id="percentInput" placeholder="Percent"></input>
+        <button class="section" id="totalButton" onclick="calculate()">Find Total</button>
+        <button id="clearButton" onclick="clearCalculator()">Clear</button>
+        <p id="totalTitle">Total</p>
+        <p id="total">0</p>
+    </div>
+    -->
+
+    <div id="note-holder">
+        <div class ="note">
+            <div class="title">title</div>
+                <input class="text">
+                    note
+                </input>
+        </div>
+    </div>
 </main>
 <footer>
         <div>
