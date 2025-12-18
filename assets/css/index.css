@@ -144,7 +144,7 @@ footer, nav, .name{
 .job > .title{
     font-weight: bold;
 }
-.job > .duration{
+.job > .duration, .school-header > .duration{
     font-style: italic;
 }
 #contacts > a >img{
@@ -154,6 +154,11 @@ footer, nav, .name{
 #contacts{
     display: flex;
     justify-content: space-evenly;
+}
+.school-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* 
