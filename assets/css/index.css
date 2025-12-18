@@ -141,6 +141,11 @@ footer, nav, .name{
     justify-content: space-between;
     
 }
+.school-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .job > .title{
     font-weight: bold;
 }
@@ -155,11 +160,7 @@ footer, nav, .name{
     display: flex;
     justify-content: space-evenly;
 }
-.school-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 /* 
 @media screen and (min-width: 480px) {
