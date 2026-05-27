@@ -1,4 +1,4 @@
-#one, #two, #three, #four{
+div#images > img#image1, img#image2, img#image3 {
     min-width: 20px;
     max-width: 300px;
     max-height: 200px;

@@ -1,3 +1,45 @@
+div#wordle-container{
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin: center;
+}
+div#wordle-container > *{
+	padding: 10px;
+	justify-content: space-evenly;
+	
+}
+	
+div #guess-one{
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+}
+
+div #guess-two{
+	background-color: orange;
+	display: flex;
+	flex-direction: row;
+}
+
+div #guess-three{
+	background-color: purple;
+	display: flex;
+	flex-direction: row;
+}
+
+div #guess-four{
+	background-color: gray;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
+
+
 
 /* #calculator-number{
   text-align: right;

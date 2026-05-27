@@ -3,161 +3,118 @@
 
 
 /* Variables */
-:root{
-    --background-color: #97B098;
-    --text-color: #B8B08D;
-    --text-color-two: #F29559;
-    --text-color-three: #BAD7F2;
-    --box-color: #F2D492;
-}
-
+/* :root{
+    --celadon: #A9EACD;
+	--willow-green: #ADD090;
+	--dusty-olive: #6D886E;
+	--dark-wine:#862823;
+	--rosy-taupe: #C99DA3;
+	--light-bronze: #D3A27E;
+    --box-color: #F2D492;	
+} */
 
 *{
     box-sizing: border-box;
-    text-decoration: none;
-}
-
-.name{
-    background-color: white;
-    color:black;
-    max-width: 80%;
-    margin: auto;
+    text-decoration: none;	
 }
 
 /* Navigation Styles */
-
+.container{
+    margin: auto;
+    max-width: 80%;
+}
+.container > *{
+    border: solid black 4px
+}
 nav{
     margin: auto;
-    background-color: #202C39;
-    border-bottom: #F2D492 solid 5px;
+    background-color: var(--dark-wine);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 80%;
     padding: 10px;
-    color: var(--text-color);
+    color: black;
 
+	border-radius: 5px;
+}
+footer{
+	background-color: var(--dark-wine);
 }
 a:link {
-  color: var(--text-color);
+	color: red;
+	padding: 10px;
 }
 
 a:visited {
-  color: var(--text-color-three);
+	color: var(--celadon);
 }
 
 a:hover, a.link:hover  {
-  color: var(--text-color-two);
+	box-shadow: 5px 5px 5px var(--rosy-taupe);
 }
 
 a:active {
-  color: black;
+	color: purple;
 }
-a.link:link {
-  color: var(--text-color-two);
-}
-
-a.link:visited {
-  color: navy;
-}
-
-a.link:hover  {
-  color: firebrick;
-}
-
-a.link:active {
-  color: white;
-}
-
-/* Styles for main section */
 
 body{
-    background-color: var(--background-color);
+	background-color: var(--willow-green);
     text-align: center;
     color: black;
     font-family: "Times New Roman", Times, serif;
 }
 
 main{
-    background-color: var(--box-color);
-    max-width: 80%;
+	background-color: var(--light-bronze);
     margin: auto;
     text-align: left;
     font-family: 'Times New Roman', sans-serif, Times;
     font-size: 20px;
-     padding:20px;
-}
-
-h2, h3{
-    text-align: center;
-    max-width: 80%;
-}
-
-#buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px;
-}
-
-.text{
-    color: black;
-}
-button{
-    padding: 5px;
+    padding: 20px;
 }
 /* Styles for footer section */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #202C39;
-    border-top: #F2D492 solid 5px;
-    color: white;
-    max-width: 80%;
-    margin: auto;
-}
-
-
 footer, nav, .name{
-    font-family:'Julius Sans One', sans-serif;
+	font-family:'Julius Sans One', sans-serif;
     font-size: 23px;
 }
 
-#images > img{
-    max-width: 30%;
-}
-
-.title,.title > .company{
-    display: flex;
+.title, .title > .company{
+	display: flex;
     flex-direction: row;
 }
 .title > .company{
-    font-weight: normal;
+    
+	font-weight: normal;
 }
 .job{
-    display: flex;
+    
+	display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
 .school-header{
-    display: flex;
+    
+	display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .job > .title{
-    font-weight: bold;
+    
+	font-weight: bold;
 }
 .job > .duration, .school-header > .duration{
-    font-style: italic;
+    
+	font-style: italic;
 }
 #contacts > a >img{
-    max-width: 100px;
+    
+	max-width: 100px;
     max-height: 100px;
 }
 #contacts{
-    display: flex;
+    
+	display: flex;
     justify-content: space-evenly;
 }
 
@@ -196,7 +153,8 @@ footer, nav, .name{
     text-align: left;
 }
 nav{
-    list-style-type: none;
+    
+	list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -212,10 +170,12 @@ a{
 h3{
     text-align: center;
 }
+    */
+    
 #contacts{
-    justify-content: space-between;
-    display: flex;
+    background-color: brown;
 }
+/*
 img{
     max-width: 100px;
     max-height: 100px;
