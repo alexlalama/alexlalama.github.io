@@ -1,0 +1,6 @@
+#image1, #image2, #image3{
+    min-width: 20px;
+    max-width: 300px;
+    max-height: 200px;
+    border-style: 1px red solid;
+}

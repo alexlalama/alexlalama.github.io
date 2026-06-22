@@ -1,0 +1,17 @@
+.section-title{
+	font-size: 20px;
+
+}
+footer{
+	margin: auto;
+}
+#images{
+	max-width:auto;
+	max-height:auto;
+
+}
+img#programmingbubble{
+	clip-path: circle(50%);
+	max-width: 50px;
+	max-height: 50px;
+}
